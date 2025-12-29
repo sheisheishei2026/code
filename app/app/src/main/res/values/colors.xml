@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#189DF4</color>
+    <color name="colorPrimaryDark">#189DF4</color>
+    <color name="colorAccent">#189DF4</color>
+    <color name="green">#09CC23</color>
+    <color name="under2">#BEBFBE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#E64B4B</color>
+
+
+    <color name="color_divider_line_gray">#e2e2e2</color>
+    <color name="color_gray_light_content_text">#5d5d5d</color>
+    <color name="tab_icon_color">#666666</color>
+    <color name="tab_text_color">#666666</color>
+</resources>

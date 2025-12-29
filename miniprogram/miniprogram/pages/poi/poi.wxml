@@ -1,0 +1,82 @@
+<wxs module="utils">
+var getPrice = function (str) {
+    if (str == 0) {
+      return "免费";
+    }
+    if (str.slice(-1) == "元") {
+      return str;
+    }
+    if (str.length > 3) {
+      return str;
+    }
+    return '￥' + str + "元";
+  };
+  var getRateImg = function (innerIndex, rate) {
+    return innerIndex < rate ? '/images/star-filled.png' : '/images/star-empty.png'
+  }
+  var getTags = function (place) {
+    return place.recomend.split('，')
+  }
+
+  module.exports.getTags = getTags;
+  module.exports.getPrice = getPrice;
+  module.exports.getRateImg = getRateImg;
+</wxs>
+
+<scroll-view id="scroll" enable-passive="true" show-scrollbar="false" scroll-with-animation="true" scrollTop="{{scrollTop}}"  style="height: 100vh; overflow: hidden;" scroll-y="true">
+    <view wx:for="{{groupedData}}" wx:key="index" class="group">
+      <view class="group-title" data-index="{{index}}" bindtap="toggleGroup">
+        <text bindtap="onPlaceTap2" data-p="{{item}}" data-t="{{item.groupName}}" style="font-size: 16px; color: #1769e4;">{{item.groupName}}</text>
+        <text style="padding-left:0px; font-size: 13px; color: #911ae0;">{{item.expanded ? '收起' : '展开'}}</text>
+        <!-- <image class="imgsmall" src="{{item.expanded ? '/images/m12.png' : '/images/m12.png'}}" mode="aspectFill"></image> -->
+
+      </view>
+      <view wx:if="{{item.expanded}}" class="group-items">
+        <view wx:for="{{item.items}}" wx:key="id" wx:for-item="place" wx:for-index="placeIndex" class="item" wx:if="{{placeIndex % 2 == 0}}">
+          <view id="place_{{index}}_{{placeIndex}}" class="place" style="margin-right: 5px;" bindtap="onPlaceTap" data-place="{{place}}" data-id="{{place.id}}">
+          <!-- <view> -->
+            <image src="{{noNet?'':place.img}}" mode="aspectFill" lazy-load="true"></image>
+            <!-- <image src="{{place.img}}" mode="aspectFill" lazy-load="true" catch:tap="playVideo"></image> -->
+            <view class="play-icon" wx:if="{{video && place.video}}"></view>  
+            <text class="single">{{place.title}}</text>
+            <!-- <view class="tag-container" wx:if="{{place.recomend!=''}}">
+          <view class="tag" wx:key="*this" wx:for="{{utils.getTags(place)}}">
+            {{item}}
+          </view>
+        </view> -->
+            <!-- <text class="pricetxt" >价格: {{utils.getPrice(place.price)}}</text> -->
+            <!-- <text class="pricetxt" wx:if="{{place.time}}">开放时间: {{place.time}}</text> -->
+            <!-- <text class="pricetxt" style="text-align: center; color: rgb(14, 112, 240);" wx:if="{{place.voice}}">讲解：{{place.voice}}</text> -->
+            <view class="star-rating">
+              <block wx:for="{{5}}" wx:key="*this">
+                <image src="{{index < place.rate ? '/images/star-filled.png' : '/images/star-empty.png'}}" mode="aspectFill"></image>
+              </block>
+            </view>
+
+          </view>
+          <view id="place_{{index}}_{{placeIndex + 1}}" wx:if="{{placeIndex + 1 < item.items.length}}" class="place" style="margin-left: 5px;" bindtap="onPlaceTap" data-id="{{item.items[placeIndex + 1].id}}" data-place="{{item.items[placeIndex + 1]}}">
+            <image src="{{noNet?'':item.items[placeIndex + 1].img}}" mode="aspectFill" lazy-load="true"></image>
+            <view class="play-icon" wx:if="{{video && item.items[placeIndex + 1].video}}"></view>
+            <text class="single">{{item.items[placeIndex + 1].title}}</text>
+            <!-- <view class="tag-container" wx:if="{{item.items[placeIndex + 1].recomend!=''}}">
+          <view class="tag" wx:key="*this" wx:for="{{utils.getTags(item.items[placeIndex + 1])}}">
+            {{item}}
+          </view> 
+        </view> -->
+            <!-- <text class="pricetxt">价格: {{utils.getPrice(item.items[placeIndex + 1].price)}}</text> -->
+            <!-- <text class="pricetxt" wx:if="{{item.items[placeIndex + 1].time}}">开放时间: {{item.items[placeIndex + 1].time}}</text> -->
+            <!-- <text class="pricetxt" style="color: rgb(14, 112, 240);" wx:if="{{item.items[placeIndex + 1].voice}}">讲解：{{item.items[placeIndex + 1].voice}}</text> -->
+            <view class="star-rating">
+              <block wx:for="{{5}}" wx:key="*this" wx:for-index="innerIndex" wx:for-item="other">
+                <image src="{{innerIndex < item.items[placeIndex + 1].rate ? '/images/star-filled.png' : '/images/star-empty.png'}}" mode="aspectFill"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+ 
+</scroll-view>
+
+ <image class="back-to-top-btn" style="box-sizing:border-box; padding:5px" bindtap="toggleEx" src="/images/zhedie.png" />
+

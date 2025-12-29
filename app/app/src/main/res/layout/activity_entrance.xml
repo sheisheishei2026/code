@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:background="#FFFFFF">
+
+    <!-- 日历视图 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:background="@drawable/calendar_container_bg"
+            android:padding="12dp">
+
+<!--        <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="📅 日历"-->
+<!--                android:textColor="#333333"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="8dp" />-->
+
+        <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minDate="0"
+                android:maxDate="4102444800000"
+                android:theme="@style/CustomCalendarView"
+                android:firstDayOfWeek="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+        <android.widget.Button
+                android:id="@+id/btnEyeProtection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:minHeight="50dp"
+                android:text="👁️ 护眼"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/eye_protection_button"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null" />
+
+        <android.widget.Button
+                android:id="@+id/btnSetWallpaper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:minHeight="50dp"
+                android:text="🖼️ 设壁纸"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/wallpaper_button"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null" />
+
+        <android.widget.Button
+                android:id="@+id/btnDouyinScroll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:minHeight="50dp"
+                android:text="📱 刷极速"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/douyin_button"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+    <!-- 保活设置按钮组 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+        <android.widget.Button
+                android:id="@+id/btnBatteryOptimization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:minHeight="50dp"
+                android:text="电池优化"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/wallpaper_button"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null" />
+
+        <android.widget.Button
+                android:id="@+id/btnBackgroundRunning"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:minHeight="50dp"
+                android:text="后台运行"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/wallpaper_button"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null" />
+
+        <android.widget.Button
+                android:id="@+id/btnBindVolumeKey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:minHeight="50dp"
+                android:text="绑定音量键"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/wallpaper_button"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:elevation="6dp"
+                android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+    <!-- 状态显示区域 -->
+    <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+        <TextView
+                android:id="@+id/statusText"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正在检查保活状态..."
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/entranceRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="8dp" />
+
+</LinearLayout>

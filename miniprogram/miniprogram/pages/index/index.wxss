@@ -1,0 +1,79 @@
+
+.container.data-v-1cf27b2a {
+	padding: 20rpx;
+	background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+	min-height: 100vh;
+}
+.waterfall-container.data-v-1cf27b2a {
+	display: flex;
+	justify-content: space-between;
+	gap: 20rpx;
+}
+.waterfall-column.data-v-1cf27b2a {
+	flex: 1;
+}
+.photo-item.data-v-1cf27b2a {
+	margin-bottom: 30rpx;
+	background-color: #fff;
+	border-radius: 15rpx;
+	box-shadow: 0 5rpx 15rpx rgba(0, 0, 0, 0.1);
+	padding: 25rpx;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+}
+.photo-item.data-v-1cf27b2a:hover {
+	transform: translateY(-5rpx);
+	box-shadow: 0 8rpx 25rpx rgba(0, 0, 0, 0.15);
+}
+.photo-stack.data-v-1cf27b2a {
+	position: relative;
+	width: 100%;
+	/* 设置一个合适的最小高度，确保图片能正常显示 */
+	min-height: 320rpx;
+	margin-bottom: 20rpx;
+	perspective: 1200px;
+	transform-style: preserve-3d;
+}
+.stack-image.data-v-1cf27b2a {
+	position: absolute;
+	width: 95%;
+	/* 添加一个默认高度，但允许图片根据内容调整 */
+	height: 95%;
+	border-radius: 12rpx;
+	box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.15);
+	transform-origin: center;
+}
+.bottom.data-v-1cf27b2a {
+	z-index: 1;
+	top: 0;
+	left: 0;
+	transform: rotate(-12deg) translateZ(-80rpx) translateX(-5rpx) scale(0.9);
+	opacity: 0.85;
+	box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+}
+.middle.data-v-1cf27b2a {
+	z-index: 2;
+	top: 10rpx;
+	left: 10rpx;
+	transform: rotate(-6deg) translateZ(-40rpx) translateX(-2rpx) scale(0.95);
+	opacity: 0.92;
+	box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.15);
+}
+.top.data-v-1cf27b2a {
+	z-index: 3;
+	top: 20rpx;
+	left: 20rpx;
+	transform: rotate(0deg) translateZ(0rpx) scale(1);
+	box-shadow: 0 15rpx 35rpx rgba(0, 0, 0, 0.25);
+	opacity: 1;
+}
+.photo-name.data-v-1cf27b2a {
+	font-size: 30rpx;
+	color: #333;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	margin-top: 15rpx;
+	letter-spacing: 1rpx;
+	text-shadow: 0 1rpx 2rpx rgba(0, 0, 0, 0.1);
+}

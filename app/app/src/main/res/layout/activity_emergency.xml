@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#f0f4f8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚨 紧急求助功能"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="#1a237e" />
+
+        <!-- 蓝色紧急电话按钮组 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 紧急电话"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#1565c0"
+            android:drawablePadding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:elevation="8dp"
+                android:backgroundTint="#1976d2"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnEmergencyCall110"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="报警\n(110)"
+                    android:textSize="16sp"
+                    android:backgroundTint="#1976d2"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:elevation="8dp"
+                android:backgroundTint="#1976d2"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnEmergencyCall120"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="救医\n(120)"
+                    android:textSize="16sp"
+                    android:backgroundTint="#1976d2"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:elevation="8dp"
+                android:backgroundTint="#1976d2"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnEmergencyCall119"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="救火\n(119)"
+                    android:textSize="16sp"
+                    android:backgroundTint="#1976d2"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- 红色警告和短信按钮组 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ 其他功能"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#c62828"
+            android:drawablePadding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:elevation="8dp"
+                android:backgroundTint="#d32f2f"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnWarningSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="大声警告"
+                    android:textSize="16sp"
+                    android:backgroundTint="#d32f2f"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:elevation="8dp"
+                android:backgroundTint="#d32f2f"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnSendSms"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="发送求救短信"
+                    android:textSize="16sp"
+                    android:backgroundTint="#d32f2f"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        
+        <!-- 音频播放按钮组 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎵 音频功能"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#4527a0"
+            android:drawablePadding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:elevation="8dp"
+                android:backgroundTint="#ff9800"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnAlarmSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="警报声"
+                    android:textSize="16sp"
+                    android:backgroundTint="#ff9800"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:elevation="8dp"
+                android:backgroundTint="#9c27b0"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnReverbSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="混响声"
+                    android:textSize="16sp"
+                    android:backgroundTint="#9c27b0"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- 设置按钮 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            android:backgroundTint="#616161"
+            app:cardCornerRadius="12dp">
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="⚙️ 统一设置"
+                android:textSize="16sp"
+                android:backgroundTint="#757575"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

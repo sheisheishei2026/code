@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:text="游玩紫禁城"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+                android:id="@+id/filter_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+            <Button
+                    android:id="@+id/btn_sort"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="排序选项"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:background="@drawable/filter_button_background"
+                    style="?android:attr/borderlessButtonStyle" />
+
+            <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/search_background"
+                    android:hint="搜索地点"
+                    android:gravity="center"
+                    android:textColorHint="@color/white"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="14sp" />
+
+            <Button
+                    android:id="@+id/btn_filter"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_marginStart="4dp"
+                    android:text="开启筛选"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:background="@drawable/filter_button_background2"
+                    style="?android:attr/borderlessButtonStyle" />
+        </LinearLayout>
+
+        <!-- 列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+    <!-- 排序选项面板 -->
+    <LinearLayout
+            android:id="@+id/sort_panel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dropdown_background"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="70dp"
+            android:elevation="3dp"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_sort_by_price"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="按价格排序"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:background="?android:attr/selectableItemBackground" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_sort_by_distance"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="36dp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:paddingStart="12dp"-->
+        <!--            android:paddingEnd="12dp"-->
+        <!--            android:text="按距离排序"-->
+        <!--            android:textColor="#333333"-->
+        <!--            android:textSize="13sp"-->
+        <!--            android:background="?android:attr/selectableItemBackground"/>-->
+
+        <TextView
+                android:id="@+id/tv_sort_by_rating"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="按评分排序"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- 筛选选项面板 -->
+    <LinearLayout
+            android:id="@+id/filter_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/dropdown_background"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="70dp"
+            android:elevation="3dp"
+            android:padding="4dp"
+            android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_area_categories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_function_categories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_type_categories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+    </LinearLayout>
+
+</FrameLayout>

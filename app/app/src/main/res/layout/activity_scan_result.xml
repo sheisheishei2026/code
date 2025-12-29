@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- 顶部工具栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_back"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@android:drawable/ic_menu_close_clear_cancel"-->
+<!--            android:tint="#333333" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="向商家付款"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="4.5"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qwe2" />
+
+    <!-- 金额显示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费金额"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="#333333"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEEEEE" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    <!-- 数字键盘 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:alignmentMode="alignMargins">
+
+        <!-- 数字按钮 1-9 -->
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="1"
+            android:text="1" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="2"
+            android:text="2" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="3"
+            android:text="3" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:src="@android:drawable/ic_input_delete"
+            android:tint="#333333" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="4"
+            android:text="4" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="5"
+            android:text="5" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="6"
+            android:text="6" />
+        <TextView
+                style="@style/NumberKeyStyle"
+                android:layout_columnWeight="1"
+                android:layout_rowSpan="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/confirm_button_background"
+                android:id="@+id/btn_confirm"
+                android:text="确认\n支付"
+                android:textColor="#333333" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="7"
+            android:text="7" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="8"
+            android:text="8" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="9"
+            android:text="9" />
+
+        <Space
+                style="@style/NumberKeyStyle"
+                android:layout_columnWeight="1" />
+
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:tag="0"
+            android:text="0" />
+
+        <TextView
+            style="@style/NumberKeyStyle"
+            android:layout_columnWeight="1"
+            android:tag="."
+            android:text="." />
+
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/filter/filter",
+    "pages/cd/cd",
+    "pages/map/map",
+    "pages/my/my",
+    "pages/poi/poi",
+    "pages/pics/pics",
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "selectedColor": "#0099FF",
+    "list": [
+      {
+        "pagePath": "pages/filter/filter",
+        "text": "景点",
+        "iconPath": "/images/m2.png",
+        "selectedIconPath": "/images/m2.png"
+      },
+      {
+        "pagePath": "pages/cd/cd",
+        "text": "专辑",
+        "iconPath": "/images/m1.png",
+        "selectedIconPath": "/images/m1.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "/images/m3.png",
+        "selectedIconPath": "/images/m3.png"
+      },
+      {
+        "pagePath": "pages/poi/poi",
+        "text": "分类",
+        "iconPath": "/images/m4.png",
+        "selectedIconPath": "/images/m4.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "常用",
+        "iconPath": "/images/m5.png",
+        "selectedIconPath": "/images/m5.png"
+      } 
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents",
+  "requiredMiniprogramVersion": "2.13.0",
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.writeClipboard": {
+      "desc": "写入剪贴板内容"
+    },
+    "scope.userLocation": {
+      "desc": "获取景点距离您的位置，并定位到地图上"
+    }
+  }
+}
+
+ 

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "游玩紫禁城",
+  "enablePullDownRefresh": true
+}

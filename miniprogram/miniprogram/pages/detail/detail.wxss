@@ -1,0 +1,82 @@
+
+.container.data-v-eca06f3c {
+	padding: 20rpx;
+	background-color: #f5f5f5;
+	min-height: 100vh;
+}
+.album-info.data-v-eca06f3c {
+	margin-bottom: 20rpx;
+	text-align: center;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	padding: 20rpx;
+	border-radius: 15rpx;
+	box-shadow: 0 4rpx 15rpx rgba(0, 0, 0, 0.1);
+	/* 移除sticky定位，让标题随页面滚动 */
+	transition: opacity 0.3s ease;
+}
+.album-name.data-v-eca06f3c {
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.3);
+	letter-spacing: 2rpx;
+}
+.waterfall-container.data-v-eca06f3c {
+	display: flex;
+	justify-content: space-between;
+	gap: 20rpx;
+}
+.waterfall-column.data-v-eca06f3c {
+	flex: 1;
+}
+.image-item.data-v-eca06f3c {
+	margin-bottom: 25rpx;
+	background-color: #fff;
+	border-radius: 15rpx;
+	overflow: hidden;
+	box-shadow: 0 4rpx 15rpx rgba(0, 0, 0, 0.1);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transform: translateY(0);
+	/* 移除固定高度，让容器根据内容自适应 */
+}
+.image-item.data-v-eca06f3c:hover {
+	transform: translateY(-5rpx);
+	box-shadow: 0 8rpx 25rpx rgba(0, 0, 0, 0.15);
+}
+.image-item.data-v-eca06f3c:active {
+	transform: scale(0.98);
+}
+.detail-image.data-v-eca06f3c {
+	width: 100%;
+	display: block;
+	transition: transform 0.3s ease;
+	will-change: transform;
+	/* widthFix模式会根据图片宽度自适应高度 */
+}
+.detail-image.data-v-eca06f3c:active {
+	transform: scale(1.02);
+}
+
+/* 添加一些动画效果 */
+@keyframes fadeInUp-eca06f3c {
+from {
+		opacity: 0;
+		transform: translateY(20rpx);
+}
+to {
+		opacity: 1;
+		transform: translateY(0);
+}
+}
+.image-item.data-v-eca06f3c {
+	animation: fadeInUp-eca06f3c 0.4s ease forwards;
+}
+.image-item.data-v-eca06f3c:nth-child(2n) {
+	animation-delay: 0.1s;
+}
+.image-item.data-v-eca06f3c:nth-child(3n) {
+	animation-delay: 0.2s;
+}
+.image-item.data-v-eca06f3c:nth-child(4n) {
+	animation-delay: 0.3s;
+}

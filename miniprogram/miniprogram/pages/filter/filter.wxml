@@ -1,0 +1,136 @@
+<wxs module="utils">
+  var need2 = function (place) {
+    return place.time && place.time.indexOf('预约') !== -1;
+  };
+  var getNumber = function (str) {
+    return Number(str)
+  };
+  var sliceFirst = function (str) {
+    return str.slice(1);
+  };
+  // var getPrice = function (str) {
+  //   if (str == 0) {
+  //     return "免费";
+  //   }
+  //   if (str.slice(-1) == "元") {
+  //     return str;
+  //   }
+  //   if (str.length > 3) {
+  //     return str;
+  //   }
+  //   return '￥' + str + "元";
+  // };
+  // var getPrice2 = function (item) {
+  //   if (item.pricenum != '') {
+  //     if (item.pricenum != '0') {
+  //       return '￥' + Number(item.pricenum) + "元"
+  //     }
+  //     else {
+  //       return "免费"
+  //     }
+  //   } else if (item.price != '0') {
+  //     return '￥' + Number(item.price) + "元"
+  //   } else {
+  //     return "免费"
+  //   }
+  // };
+
+   // 按逗号分割并取第一个元素，去除"元"字
+  var getPrice3 = function (item) {
+    if (item.price != '' && item.price != '0') {
+      var firstPart = item.price.split('，')[0].replace('元', '')
+      if(firstPart == 0){
+        return "免费"
+      }else{
+        return '￥' + firstPart + '元'
+      }
+    } else {
+      return "免费"
+    }
+  };
+  var getTags = function (place) {
+    return place.recomend.split('，')
+  };
+
+  module.exports.need2 = need2;
+  module.exports.getTags = getTags;
+  module.exports.getPrice3 = getPrice3;
+  module.exports.sliceFirst = sliceFirst;
+  module.exports.getNumber = getNumber;
+</wxs>
+
+<view class="filter-container {{isShow?'show':'hide'}}">
+  <view class="filter-trigger">
+    <input placeholder="搜索地点" class="search-container-input" bindinput="onSearchInput" catchtap="stopPropagation" value="{{inputValue}}" />
+  </view>
+  <view class="filter-trigger" style="height: 40px;">
+    <text style="border-radius: 5px; padding:5px;  text-align: center;color: rgb(0, 0, 0);background-color: rgb(93, 107, 235);width:30%;color: rgb(253, 253, 253);" catchtap="toggleSortPopup">{{sortOption}}</text>
+    <text style="border-radius: 5px; padding:5px;  text-align: center;color: rgb(9, 57, 129);background-color: rgb(9, 194, 148);margin-left:10px;margin-right:10px;width:30%;color: rgb(253, 253, 253);" catchtap="goToMap">筛选景点分布</text>
+    <text style="border-radius: 5px; padding:5px; color: rgb(3, 3, 3);text-align: center;background-color: rgb(26, 149, 231);width:30%;color: rgb(253, 253, 253);" catchtap="toggleFilter">{{utils.sliceFirst(selectedName)}}</text>
+  </view>
+  <view class="sort-popup" hidden="{{!isSortPopupOpen}}" catchtouchmove="handlePopupTouchMove" bindtap="closeSortPopup">
+    <view class="sort-option" bindtap="sortByPrice">按价格排序</view>
+    <view class="sort-option" bindtap="sortByDistance">按距离排序</view>
+    <view class="sort-option" bindtap="sortByRating">按评分排序</view>
+    <view class="sort-option" bindtap="sortByTime">按添加排序</view>
+  </view>
+  <view class="filter-options" hidden="{{!isFilterOpen}}" catchtouchmove="handleFilterTouchMove" bind:tap="close">
+    <view class="filter-column" style="color: rgb(59, 129, 235);">
+      <view class="filter-option" wx:for="{{newFilterOptions2}}" wx:key="*this" bindtap="selectNewFilterOption2" data-option="{{item}}">
+        {{item}}
+      </view>
+    </view>
+    <view class="filter-column" style="color: rgb(13, 164, 184);">
+      <view class="filter-option" wx:for="{{newFilterOptions3}}" wx:key="*this" bindtap="selectNewFilterOption2" data-option="{{item}}">
+        {{item}}
+      </view>
+    </view>
+    <view class="filter-column" style="color: rgb(13, 184, 22);">
+      <view class="filter-option" wx:for="{{newFilterOptions}}" wx:key="*this" bindtap="selectNewFilterOption2" data-option="{{item}}">
+        {{item}}
+      </view>
+    </view>
+    <view class="filter-column" style="color: rgb(128, 114, 247);">
+      <view class="filter-option" wx:for="{{filterOptions}}" wx:key="*this" bindtap="selectFilterOption" data-option="{{item}}">
+        {{utils.sliceFirst(item)}}
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="outer">
+  <view bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove" bindtouchend="handleTouchEnd" show-scrollbar="false" class="{{isFilterOpen? 'list-container disabled-scroll' : 'list-container'}}" scroll-x="false">
+    <view class="list-item" wx:for="{{placesList}}" wx:key="id" wx:for-index="index" wx:for-item="item" bindtap="onListItemClick" data-item="{{item}}">
+      <!-- <view wx:if="{{item.video}}" class="corner-label top-right">
+      </view> -->
+
+      <view class="triangle-label" wx:if="{{utils.need2(item)}}">
+        <text>需预约</text>
+      </view>
+
+      <image class="item-image" mode="aspectFill" src="{{noNet?'':item.img}}" lazy-load="true"></image>
+      <view class="item-content">
+        <text class="item-title">{{item.title}}</text>
+        <view class="tag-container" wx:if="{{item.recomend!=''}}">
+          <view class="tag" wx:key="*this" wx:for="{{utils.getTags(item)}}">
+            {{item}}
+          </view>
+        </view>
+        <text wx:if="{{item.distance}}" class="item-price" style="margin-top: 3px;color:#4782ee">距离: {{item.distance}}km</text>
+        <text class="item-price" style="margin-top: 3px; color: #db3838" wx:if="{{item.price!=''}}">价格: {{utils.getPrice3(item)}}</text>
+        <!-- <text class="item-price" style="margin-top: 3px; color: #1532b4;" wx:if="{{item.time!=''}}">开放时间: {{item.time}}</text> -->
+        <view class="star-rating" style="margin-top:3px;">
+          <block wx:for="{{5}}" wx:key="*this" wx:for-index="placeIndex" wx:for-item="placeItem">
+            <image src="{{placeIndex < utils.getNumber(item.rate) ? '/images/star-filled.png' : '/images/star-empty.png'}}" mode="aspectFill"></image>
+            <!-- <text class="item-title">{{item.rate}}</text> -->
+            <!-- <text class="item-title">{{placeIndex}}</text> -->
+            <!-- <text class="item-title">{{placeIndex < utils.getNumber(item.rate) }}</text> -->
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

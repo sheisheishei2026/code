@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/tv_sort_by_price"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="按价格排序"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:background="@drawable/sort_item_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_sort_by_distance"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="按距离排序"-->
+<!--        android:textColor="#333333"-->
+<!--        android:textSize="16sp"-->
+<!--        android:background="@drawable/sort_item_background"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:paddingEnd="16dp"/>-->
+
+    <TextView
+        android:id="@+id/tv_sort_by_rating"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="按评分排序"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:background="@drawable/sort_item_background"
+        android:layout_marginTop="1dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+</LinearLayout>

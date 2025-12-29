@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="添加"
+        android:textColor="#ffd54f"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/time"
+        android:fadingEdge="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="我要做……"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:scrollbars="horizontal"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

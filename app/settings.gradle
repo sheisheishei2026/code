@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'org.jetbrains.kotlin.android' version '2.2.0'
+        id 'org.jetbrains.kotlin.plugin.compose' version '2.2.0'
+    }
+}
+
+rootProject.name = 'X'
+include ':app'

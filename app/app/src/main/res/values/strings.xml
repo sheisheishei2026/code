@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">X</string>
+    <string name="title_activity_main2">Movie</string>
+    <string name="title_activity_main3">2048</string>
+    <string name="expand">展开更多</string>
+    <string name="shrink">收起</string>
+    <string name="douyin_accessibility_service_description">用于自动滑动抖音极速版视频</string>
+    <string name="volume_key_service_description">用于监听音量键双击事件以快速启动音效页面</string>
+
+</resources>

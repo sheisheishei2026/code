@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="sp_txt_size_content">14sp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="grid_spacing">8dp</dimen>
+</resources>

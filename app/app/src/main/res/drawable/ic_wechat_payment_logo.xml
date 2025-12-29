@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    
+    <!-- 对话框背景 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,8 L52,8 C56.4,8 60,11.6 60,16 L60,40 C60,44.4 56.4,48 52,48 L32,48 L20,56 L20,48 L12,48 C7.6,48 4,44.4 4,40 L4,16 C4,11.6 7.6,8 12,8 Z" />
+    
+    <!-- 对勾 -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M20,28 L28,36 L44,20 L40,16 L28,28 L24,24 Z" />
+    
+</vector>
+

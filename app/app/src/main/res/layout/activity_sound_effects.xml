@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:background="#f0f4f8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎵 音效播放器"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#1a237e" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔊 声音效果"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#1565c0"
+            android:drawablePadding="8dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_marginBottom="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnKeyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="⌨️\n键盘"
+                    android:textSize="16sp"
+                    android:backgroundTint="#42a5f5"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="🚨\n警报"
+                    android:textSize="16sp"
+                    android:backgroundTint="#ff7043"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnTiger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="🐅\n老虎"
+                    android:textSize="16sp"
+                    android:backgroundTint="#ffca28"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnLaughter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="😄\n笑声"
+                    android:textSize="16sp"
+                    android:backgroundTint="#66bb6a"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnTyping"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="⌨️\n打字"
+                    android:textSize="16sp"
+                    android:backgroundTint="#ab47bc"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnCough"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="😷\n咳嗽"
+                    android:textSize="16sp"
+                    android:backgroundTint="#78909c"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnVeribly"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="震动\n(veribly)"
+                    android:textSize="16sp"
+                    android:backgroundTint="#26a69a"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <Button
+                    android:id="@+id/btnJianpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="⌨️\n机械键盘"
+                    android:textSize="16sp"
+                    android:backgroundTint="#7e57c2"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="24dp"-->
+<!--            android:elevation="8dp"-->
+<!--            app:cardCornerRadius="12dp">-->
+
+            <Button
+                android:id="@+id/btnStopAll"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="⏹️ 停止播放"
+                android:textSize="16sp"
+                android:backgroundTint="#ef5350"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </LinearLayout>
+</ScrollView>

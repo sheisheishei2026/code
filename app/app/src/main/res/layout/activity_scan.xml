@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 相机预览 -->
+    <TextureView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <!-- 扫描提示文本 -->
+    <TextView
+            android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:text="识别二维码 / 花草 / 动物 / 商品等"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 上面的按钮区域 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@id/bottom_bar"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/circle_gray_button"
+                    android:padding="12dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:tint="#FFFFFF" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="我的二维码"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/circle_gray_button"
+                    android:padding="12dp"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:tint="#FFFFFF" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="相册"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 底部黑色栏 -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- 下面的扫一扫文字 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="扫一扫"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</RelativeLayout>

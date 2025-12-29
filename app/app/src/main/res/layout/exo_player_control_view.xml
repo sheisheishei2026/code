@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exo_control_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layoutDirection="ltr"
+    android:background="#80000000"
+    android:alpha="0.3"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <ImageButton
+                android:id="@+id/exo_download"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+        
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_download_notification"
+          />
+
+        <ImageButton
+                android:id="@+id/exo_copy"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_copy"
+            />
+
+        <ImageButton android:id="@id/exo_rew"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+                android:layout_marginStart="8dp"
+            android:src="@drawable/exo_controls_rewind"/>
+
+        <ImageButton android:id="@id/exo_play"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/exo_icon_play"/>
+
+        <ImageButton android:id="@id/exo_pause"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+                android:layout_marginStart="8dp"
+            android:src="@drawable/exo_icon_pause"/>
+
+        <ImageButton android:id="@id/exo_ffwd"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+                android:layout_marginStart="8dp"
+            android:src="@drawable/exo_controls_fastforward"/>
+
+<!--        <ImageButton-->
+<!--                android:id="@+id/kuaijin"-->
+<!--                android:layout_width="32dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:background="?selectableItemBackgroundBorderless"-->
+<!--                android:src="@drawable/ic_fast_forward"-->
+<!--                android:onClick="kuaijin"/>-->
+
+        <ImageButton
+                android:id="@+id/exo_favorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_favorite_border"
+             />
+
+        <ImageButton
+                android:id="@+id/exo_screenshot"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_screenshot"
+           />
+
+        <ImageButton
+                android:id="@+id/exo_record"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_record"
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- 当前时间 -->
+        <TextView android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:includeFontPadding="false"
+            android:textColor="#FFBEBEBE"/>
+
+        <!-- 进度条 -->
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@id/exo_progress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="26dp"/>
+
+        <!-- 总时长 -->
+        <TextView android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:includeFontPadding="false"
+            android:textColor="#FFBEBEBE"/>
+
+    </LinearLayout>
+
+</LinearLayout>

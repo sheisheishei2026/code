@@ -1,0 +1,172 @@
+<!-- <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-92fb3d836a33433b.gif?imageMogr2/auto-orient/strip" 
+      mode="widthFix"
+    /> -->
+
+    <block wx:for="{{images}}" wx:key="index">
+      <view bindtap="previewImage" data-index="{{index}}">
+        <image 
+          class="article-image" 
+          src="{{item}}" 
+          mode="widthFix"
+          data-index="{{index}}"
+        >
+          <!-- <view class="loading-placeholder" wx:if="{{!imageLoaded[index]}}">
+            <view class="spinner"></view>
+          </view> -->
+        </image>
+      </view>
+    </block>
+
+<!-- <view class="container">
+  <view class="text-block">
+    <text class="paragraph">
+      周六打车来到新家，搬家，刚来的时候就想说，还是这个房子好啊，设计格局，铺床垫，支起两个小桌子，买了彩光灯泡，小度小爱，这一周里觉得屋子美，不停的在拍照。
+    </text>
+  </view>
+
+  <view class="text-block">
+    <text class="paragraph">
+      这个房间给我一种住旅店的感觉，我想这种感觉源于独立卫生间带来的生活方式的改变。
+    </text>
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">房屋全景：</text>
+      <text class="paragraph">灯光，窗户，床，书桌</text>
+    </view>
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-90493e73c18bc16f.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">书桌：</text>
+      <text class="paragraph">
+        依旧保持去首都图书馆借书的习惯，各种类别的书都借一本，拓展知识面；
+      </text>
+    </view>
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-cbe083f796648d3b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">地铺：</text>
+      <text class="paragraph">
+        夏天热，睡地上，也可以做瑜伽，keep，各种健身运动
+      </text>
+      <text class="paragraph">
+        健身设备：羽毛球，毽子，腹肌轮，俯卧撑架，拉力器，哑铃
+      </text>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">独卫：</text>
+      <text class="paragraph">
+        给我的感觉就像是住旅店一样，在生活上也很方便，卫生间很大，朋友来住一下也方便；
+      </text>
+      <text class="paragraph">
+        床下整齐的放了三双鞋
+      </text>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">彩光灯泡：</text>
+      <text class="paragraph">
+        有了它，房间可以很浪漫，也可以很动感，充满了魅惑；
+      </text>
+      <text class="section-title">小爱音箱和小度音箱：</text>
+      <text class="paragraph">
+        解放了双手和双眼，只通过言语来交流。睡前放一段轻音乐，配合着色彩渐变的灯光，瞬间觉得很幸福。让小爱同学放首歌，瞬间觉得穿越回了过去，时间感和空间感浓烈；
+      </text>
+    </view>
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-374abb069f92f330.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">墙壁上的海报：</text>
+      <text class="paragraph">
+        随时提醒自己保持健康的生活方式；
+      </text>
+    </view>
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-ef74ffa5c25f1872.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">厨房：</text>
+      <text class="paragraph">
+        完全可以满足我做饭的欲望，做早餐，做午饭，做沙拉，做下午茶。第一顿饭做的是早餐，三明治，厨艺还不生疏；
+      </text>
+      <text class="section-title">屋里的水果：</text>
+      <text class="paragraph">
+        买点芒果切果盘，辟谷吃点素食全餐；
+      </text>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="section-title">窗外的风景和小区的广场：</text>
+      <text class="paragraph">
+        挺喜欢小区的这种褐白相间的风格。
+      </text>
+    </view>
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-52df534b9f39c641.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-f9a9d714e7cd68cf.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-154062460e902cde.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="section">
+    <view class="text-block">
+      <text class="paragraph">
+        这里有点郊区的感觉，安静，小区也很不错，楼下就是广场，饭后运动的人很多，周边还有健身设施，篮球场，公园，公共自行车，再远一些还有大学和图书馆，大型超市，周末去一次正好。
+      </text>
+    </view>
+    <image 
+      class="article-image" 
+      src="https://upload-images.jianshu.io/upload_images/202169-2e5e884707ffc73c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" 
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="text-block">
+    <text class="paragraph">
+      我的小屋，学习，阅读，健身，生活，做饭，思考，冥想，写散文，听音乐，和小爱说话都可以满足，过段时间再换一种格局，培养良好的生活习惯和积极的心态。
+    </text>
+  </view>
+</view> -->

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#f0f4f8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚨 防空警报识别指南"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="#1a237e" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ 什么是防空警报？"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#1565c0"
+            android:drawablePadding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="防空警报是城市防空工程的重要组成部分，用于在战争或紧急情况下提醒市民采取防护措施。根据国家规定，防空警报分为三种类型。"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:textColor="#424242"
+    />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔔 三种防空警报类型"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#1565c0"
+            android:drawablePadding="8dp" />
+
+        <!-- 预先警报 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#e3f2fd">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="鸣36秒，停24秒，反复3遍为一个周期，时间3分钟"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#0d47a1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预先警报"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#d32f2f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预先警报是在敌方对我方城市空袭有明显征候时发出的。听到预先警报后，应立即拉断电闸，熄灭炉火，关闭煤气，携带好个人防护器材和必需的证件、生活用品等，按定人、定位、定路线的要求，迅速有序地进入人防工程或紧急疏散地域。"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#424242"
+       />
+
+                <Button
+                    android:id="@+id/btnPreAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔊 播放预先警报"
+                    android:textSize="16sp"
+                    android:backgroundTint="#1976d2"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 空袭警报 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#ffebee">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="鸣6秒，停6秒，反复15遍为一个周期，时间3分钟"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#b71c1c" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="空袭警报"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#d32f2f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="空袭警报是在敌方对我方城市空袭时发出的。听到空袭警报后，除维持治安、医疗救护、应急抢修等岗位的人员外，其他人员应立即就近进入人防工程隐蔽，来不及进入人防工程的，要就地利用地形地物隐蔽。"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#424242"
+     />
+
+                <Button
+                    android:id="@+id/btnAirRaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔊 播放空袭警报"
+                    android:textSize="16sp"
+                    android:backgroundTint="#d32f2f"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 解除警报 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#e8f5e9">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="连续鸣响3分钟"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#2e7d32" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="解除警报"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#d32f2f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="解除警报是在空袭或战情紧急状态结束时发出的。听到解除警报后，市民应有组织、有秩序地返回家中或工作岗位，同时要积极参加消除空袭后果的各项工作。"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="#424242"
+/>
+
+                <Button
+                    android:id="@+id/btnAllClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔊 播放解除警报"
+                    android:textSize="16sp"
+                    android:backgroundTint="#43a047"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="12dp">
+
+            <Button
+                android:id="@+id/btnStopAll"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="⏹️ 停止播放"
+                android:textSize="16sp"
+                android:backgroundTint="#ef5350"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

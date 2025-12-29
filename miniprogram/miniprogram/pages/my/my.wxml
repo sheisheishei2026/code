@@ -1,0 +1,105 @@
+<wxs module="utils">
+  var get1 = function (str) {
+    return str.split('，')[0];
+  }
+  var get2 = function (str) {
+    return str.split('，')[1];
+  }
+  var get3 = function (str) {
+    return str.split('，')[2];
+  }
+  module.exports.get1 = get1;
+  module.exports.get2 = get2;
+  module.exports.get3 = get3;
+</wxs>
+<scroll-view scrollTop="{{scrollTop}}" scroll-with-animation="true" show-scrollbar="false" style="height:100vh;overflow: hidden;" scroll-y="true">
+
+<view class="container">
+  <view class="scroll-wrapper" >
+    <text class="title title2" style="margin-top: 5px;">抢票公众号</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{offlist}}" wx:key="index">
+        <view class="content-wrapper" bindtap="goToBooking" data-appid="{{item.officalId}}">
+          <image mode="aspectFit" style="object-fit:contain;width:70px;height:70px" class="bgimg has-shadow" src="https://open.weixin.qq.com/qr/code?username={{item.officalId}}"  show-menu-by-longpress="{{true}}" bindtap="goToBooking2" data-appid="{{item.officalId}}" lazy-load="true"></image>
+          <text class="text-content" style="margin-top: 5px;">{{item.title}}</text>
+           <text class="text-content2">{{item.go}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll-wrapper" style="margin-top: 6px;">
+    <text class="title title2" style="margin-top: 7px;">常用公众号</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{yuyue}}" wx:key="index">
+        <view class="content-wrapper">
+          <image mode="aspectFill" style="object-fit:contain;width:70px;height:70px"  class="image-content has-shadow" src="https://open.weixin.qq.com/qr/code?username={{item.officalId}}" show-menu-by-longpress="{{true}}" mode="aspectFill" lazy-load="true"></image>
+          <text class="text-content">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll-wrapper" style="margin-top: 2px;margin-bottom: 5px;">
+    <text class="title title2" >抢票小程序</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{applist}}" wx:key="index">
+        <view class="content-wrapper" bindtap="goToBooking" data-appid="{{item.appId}}">
+          <image mode="aspectFill" class="bgimg has-shadow" src="{{noNet?'':item.img}}"  mode="aspectFill" bindtap="goToBooking2" data-appid="{{item.appId}}" lazy-load="true"></image>
+          <text class="text-content">{{item.title}}</text>
+          <text class="text-content2">{{item.go}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll-wrapper">
+    <text class="title title2">玩乐小程序</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{youwan}}" wx:key="index">
+        <view class="content-wrapper">
+          <image mode="aspectFill" class="image-content has-shadow" src="{{noNet?'':item.img}}" mode="aspectFill" bindtap="goToBooking2" data-appid="{{item.officalId}}" lazy-load="true"></image>
+          <text class="text-content">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll-wrapper">
+    <text class="title title2">常用小程序</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{apps}}" wx:key="index">
+        <view class="content-wrapper">
+          <image mode="aspectFill" class="image-content has-shadow" src="{{noNet?'':item.img}}" mode="aspectFill" bindtap="goToBooking2" data-appid="{{item.officalId}}" lazy-load="true"></image>
+          <text class="text-content">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll-wrapper">
+    <text class="title title2">公园小程序</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{gongyuan}}" wx:key="index">
+        <view class="content-wrapper">
+          <image mode="aspectFill" class="image-content has-shadow" src="{{noNet?'':item.img}}" mode="aspectFill" bindtap="goToBooking2" data-appid="{{item.officalId}}" lazy-load="true"></image>
+          <text class="text-content">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="scroll-wrapper">
+    <text class="title title2">北戴河小程序</text>
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{beidaihe}}" wx:key="index">
+        <view class="content-wrapper">
+          <image mode="aspectFill" class="image-content has-shadow" src="{{noNet?'':item.img}}" mode="aspectFill" bindtap="goToBooking2" data-appid="{{item.officalId}}" lazy-load="true"></image>
+          <text class="text-content">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>
+</scroll-view>

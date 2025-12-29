@@ -1,0 +1,224 @@
+<wxs module="utils">
+  var sliceFirst = function (str) {
+    return str.slice(1);
+  }
+  var isVideo = function (item) {
+    return item.endsWith('mp4')
+  }
+  var isTrue = function (a, b) {
+    return a == b;
+  }
+  var getTitle = function (title) {
+    return title.length > 6 ? title.slice(0, 6) : title 
+  }
+  
+  var getPrice = function (str) {
+    if (str == 0) {
+      return "免费";
+    }
+    if (str.slice(-1) == "元") {
+      return str;
+    }
+    if (str.length > 3) {
+      return str;
+    }
+    return str + "元";
+  };
+  var getType = function (str) {
+    switch (str[0]) {
+      case 'a':
+        return '人文·历史·大学'
+      case 'b':
+        return '艺术·展馆·书苑'
+      case 'c':
+        return '行业·科学·技术'
+      case 'd':
+        return '寺庙·坛观·宗教'
+      case 'e':
+        return '游乐·度假·表演'
+      case 'g':
+        return '商场·商圈·零售'
+      case 'h':
+        return '园区·大厦·酒店'
+      case 'i':
+        return '公园·山水·自然'
+      case 'k':
+        return '街道·美食·小吃'
+    }
+  }
+  var splitTime = function (timeStr) {
+    if (!timeStr) return []
+    return timeStr.split('；')
+  }
+
+  module.exports.splitTime = splitTime;
+  module.exports.isVideo = isVideo;
+  module.exports.sliceFirst = sliceFirst;
+  module.exports.isTrue = isTrue;
+  module.exports.getPrice = getPrice;
+  module.exports.getType = getType;
+  module.exports.getTitle = getTitle;
+</wxs>
+<scroll-view show-scrollbar="false" scrollTop="{{scrollTop}}" style="height: 100vh; overflow: hidden;" scroll-y="true">
+
+  <view class="container7">
+    <view class="search-container" wx:if="{{showTop}}">
+
+      <view class="dropdown">
+        <view class="dropdown-header" style="background-color: rgb(128, 114, 247); height:21px;line-height:21px;" bindtap="toggleSettingDropdown">地图设置</view>
+        <view wx:if="{{showSettingDropdown}}" class="dropdown-menu">
+          <block wx:for="{{setting}}" wx:key="index">
+            <view class="dropdown-item" bindtap="selectSetting" data-index="{{index}}" style="width: 60px;color: {{selectedSetting==setting[index]? '#f00' : '#262727'}};">
+              {{item}}
+            </view>
+          </block>
+        </view>
+      </view>
+      <input placeholder="搜索地点" class="search-container-input" bindinput="onSearchInput" />
+
+      <view class="dropdown">
+        <view class="dropdown-header" bindtap="toggleTypeDropdown" style="height:21px;line-height:21px;">
+          {{utils.sliceFirst(selectedName)}}
+        </view>
+        <view wx:if="{{showTypeDropdown}}" class="dropdown-menu">
+          <block wx:for="{{types}}" wx:key="index">
+            <view class="dropdown-item" bindtap="selectType" data-index="{{index}}" style="width: 60px;color:{{types[index]==selectedName ? '#ff0000' : '#262727'}};">
+              {{utils.sliceFirst(item)}}
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view wx:if="{{showSearchResult}}" class="search-result">
+        <view wx:for="{{searchResult}}" wx:key="*this" class="result-item" bindtap="onResultItemTap" data-index="{{index}}">
+          <image src="{{item.img}}" mode="aspectFill" class="result-item-image has-shadow"></image>
+          <text class="result-item-text">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+
+    <canvas 
+  style="width: 60px; height: 45px; position: absolute; top: -100px; left: 0;" 
+  canvas-id="markerCanvas"
+></canvas>
+
+    <map id="map" style="position: absolute; bottom: 0; width: 100vw; height: 105vh;" enable-3d="{{true}}" enable-overlooking="{{true}}" enable-auto-max-overlooking="{{true}}" markers="{{items}}" bindmarkertap="onMarkerTap" enable-marker-clustering cluster-clickable bindtap="onMapTap" bindcallouttap="onMarkerTap" bindregionchange="onRegionChange" enable-poi="{{showPoi}}" enable-building="{{true}}" show-location="{{true}}" scale="{{scale}}" longitude="{{longitude2}}" latitude="{{latitude2}}">
+    </map>
+
+    <view class="video-popup" wx:if="{{showVideoPopup}}">
+      <view class="popup-mask" bindtap="closeVideoPopup"></view>
+      <view class="close-btn" bindtap="closeVideoPopup">关闭</view>
+      <view class="popup-content">
+        <video id="popup-video" class="video-cover-full" src="{{popupVideoSrc}}" autoplay controls></video>
+      </view>
+    </view>
+
+    <view class="overlay-content" wx:if="{{overlayImage.title}}">
+      <view class="container7">
+        <swiper class="swiper banner-container {{hasLoaded? 'has-shadow3' : 'noshadow'}}" wx:if="{{!noNet && indicatorDots}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#AAACAD" indicator-active-color="#ffffff" circular="{{circular}}" disable-touch="{{disableTouch}}" easing-function="linear" indicator-width="5" indicator-height="5" current="{{current}}" bindchange="change">
+          <block wx:for="{{imgUrls}}" wx:key="*this">
+            <swiper-item>
+              <view wx:if="{{hasVideo && index == 0}}" style="overflow: hidden;">
+                <video id="video" class="bgimg3" src="{{item}}" enable-progress-gesture muted show-fullscreen-btn="{{false}}" show-center-play-btn='{{true}}' show-play-btn="{{true}}" show-bottom-progress="{{false}}" autoplay="{{autoVideo}}" controls="false" catch:tap="openVideoPopup" picture-in-picture-mode="[]" show-pip-btn="{{false}}" bindplay="videoPlay" bindpause="videoPause" bindtimeupdate="videoTimeUpdate"></video>
+              </view>
+              <view wx:else style="overflow: hidden;">
+                <image mode="aspectFill" class="bgimg2 {{hasLoaded? 'has-shadow5' : 'noshadow'}}" catch:tap="previewImage" bindload="onImageLoad" src="{{item}}"></image>
+              </view>
+              <!-- <image mode="aspectFill" class="bgimg2 {{hasLoaded? 'has-shadow' : ''}}" bindtap="previewImage" bindload="onImageLoad" src="{{item}}"></image> -->
+            </swiper-item>
+          </block>
+        </swiper>
+        <image src="{{overlayImage.img}}" wx:if="{{!noNet && !indicatorDots}}" mode="aspectFill" class="bgimg22 {{hasLoaded? 'has-shadow3' : 'noshadow'}}" catch:tap="previewImage" bindload="onImageLoad"></image>
+      </view>
+
+      <view class="container4" bindtap="closeOverlay" >
+        <view class="container6" wx:if="{{overlayImage.officalId !='' && overlayImage.officalId!=null}}" style="width:35px;justify-content: left;text-align: left; align-items:flex-start;margin-top: 0px;position:absolute;top:8px;right:8px">
+          <image src="https://open.weixin.qq.com/qr/code?username={{overlayImage.officalId}}" mode="aspectFill" class="overlay-image" catch:tap="xiaochengxu" data-appid="{{overlayImage.appId}}" style="{{overlayImage.appId!=null&&overlayImage.appId!='' ? 'border: 1px solid #e6e6e6;' : ''}}" show-menu-by-longpress="{{true}}">
+          </image>
+        </view>
+
+        <view class="container5">
+          <text style="font-weight: 600;font-size: 14px;align-self: center;" catch:tap="copyName">{{overlayImage.title}}</text>
+          <view class="star-rating" style="align-self: center;">
+            <block wx:for="{{5}}" wx:key="*this">
+              <image src="{{index < overlayImage.rate ? '/images/star-filled.png' : '/images/star-empty.png'}}" mode="aspectFill"></image>
+            </block>
+          </view>
+          <view class="container6" style="justify-content: center;text-align: center; align-items:center;">
+            <view class="container8" style="justify-content:center; margin-top: -3px;">
+
+              <text wx:if="{{video && hasVideoReal}}" class="custom-button3" style="background-color: rgb(230, 21, 73);"  size="mini" catch:tap="video" data-apptitle="{{overlayImage.title}}">视频</text>
+
+              <text class="custom-button3" style="background-color: rgb(230, 146, 21);"  size="mini" catch:tap="detail" data-apptitle="{{overlayImage.title}}">详情</text>
+
+              <text class="custom-button3" style="background-color: rgb(14, 190, 221);"  size="mini" catch:tap="biji" data-apptitle="{{overlayImage.title}}">笔记</text>
+
+              <text catch:tap="nav2" class="custom-button3" style="background-color: rgb(128, 114, 247); color: white;">导航</text>
+
+              <text catch:tap="toggleSwitch" data-poiId="{{overlayImage.title}}" class="custom-button3 {{overlayImage.isFav ? 'switch-on' : 'switch-off'}}">{{overlayImage.isFav ? '取消' : '收藏'}}</text>
+
+              <text class="custom-button3" style="width: 42px; background-color: rgb(13, 184, 22);" wx:if="{{overlayImage.appId!='' && overlayImage.appId!=null}}" size="mini" catch:tap="xiaochengxu" data-appid="{{overlayImage.appId}}">小程序</text>
+
+              <!-- <text class="custom-button3" style="width: 110px; background-color: rgb(164, 13, 184); margin-right: 0px;" wx:if="{{overlayImage.officalId!='' && overlayImage.officalId!=null}}" size="mini" data-appid="{{overlayImage.appId}}">长按二维码去公众号</text> -->
+            </view>
+          </view>
+          <view class="tag-container" style="align-self: center; margin-top: 2px;margin-left: 2px;">
+            <view class="tag" wx:key="*this" wx:for="{{tags}}">
+              {{item.text}}
+            </view>
+          </view>
+
+          <view>
+            <view style="display: flex;flex-direction: column;margin-left: 2px;">
+
+              <view>
+                <view class="left1">
+                  <image src="/images/a1.png" class="ic1" style="filter: hue-rotate(335deg) saturate(200%) brightness(90%);" mode="aspectFill"></image>
+                  <text class="left2" style="color: rgb(231, 22, 22);">{{utils.getPrice(overlayImage.price)}}</text>
+                </view>
+                <view class="left1" wx:if="{{overlayImage.time != ''}}">
+                  <image src="/images/a8.png" class="ic1" style="filter: hue-rotate(235deg) saturate(200%) brightness(90%);" mode="aspectFill"></image>
+                  <!-- <text class="left2" style="color: rgb(36, 129, 216);">{{overlayImage.time}}</text> -->
+                  <view>
+                  <view class="time-container" style="color: rgb(36, 129, 216);" wx:for="{{utils.splitTime(overlayImage.time)}}" wx:key="index">
+                    <text class="left2" style="color: rgb(36, 129, 216);">{{item}}</text>
+                  </view>
+                  </view>
+                  <!-- <text class="left2" style="color: rgb(36, 129, 216);"
+          wx:for="{{utils.splitTime(overlayImage.time)}}"
+          wx:key="index">{{item}}</text> -->
+
+                </view>
+                <view class="left1" wx:if="{{address != ''}}">
+                  <image src="/images/a5.png" class="ic1" style="filter: hue-rotate(90deg) saturate(200%) brightness(90%);" mode="aspectFill"></image>
+                  <text class="left2" style="color: rgb(64, 167, 61);" wx:if="{{address != ''}}">{{address}}</text>
+                </view>
+              </view>
+
+              <!-- <view class="container6" wx:if="{{overlayImage.officalId !='' && overlayImage.officalId!=null}}" style="width: 40px;justify-content: left;text-align: left; align-items:flex-start;margin-top: 0px;position:absolute;top:10px;right:5px">
+                                <image src="https://open.weixin.qq.com/qr/code?username={{overlayImage.officalId}}" mode="aspectFill" class="overlay-image" bindtap="openMiniProgram2" data-appid="{{overlayImage.appId}}" style="{{overlayImage.appId!=null&&overlayImage.appId!='' ? 'border: 1px solid #16b2cc;' : ''}}" show-menu-by-longpress="{{true}}">
+                                </image>
+                            </view> -->
+
+
+            </view>
+
+            <view wx:if="{{nearbyPois.length>0}}">
+              <!-- <text>附近景点：</text> -->
+              <view class="near-container" style="align-self: center; margin-top: 8px;">
+                <!-- <image src="/images/a5.png" class="ic1" style="filter: hue-rotate(90deg) saturate(200%) brightness(90%);" mode="aspectFill"></image> -->
+                <view class="near2" wx:key="*this" wx:for="{{nearbyPois}}" wx:key="title" data-poi="{{item}}" catch:tap="handleNearbyClick">
+                  <image wx:if="{{!noNet}}" src="{{item.img}}" style="border-radius:5px; width:25px; height:25px;margin:3px;"></image>
+                  <text> {{item.distance}}m</text>
+                  <text style="padding-left:3px;padding-right:3px;height:13px;align-self:center;"> {{  utils.getTitle(item.title)}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <image class="back-to-top-btn" mode="aspectFill" bindtap="location" src="/images/b2.png" />
+  </view>
+</scroll-view>

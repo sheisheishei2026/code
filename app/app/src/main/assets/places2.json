@@ -1,0 +1,206 @@
+{
+  "items":
+
+[
+  {"id":"1","title":"故宫博物院","longitude":"116.397029","latitude":"39.917839","price":"旺季60元，淡季40元","rate":"5","officalId":"weigugong","type":"abt","appId":"wx13169e68a3e63e55","recomend":"建筑艺术，博物馆展览，讲解，中轴线","voice":"上午9:00开始，每半小时就有一个新团出发，直到下午13:30结束‌","time":"旺季8:30-17:00，16:00停止入馆，淡季8:30-16:30停止入馆，15:30闭馆","go":"提前7天，20:00放票，本周六约下周六，不能定当天","img":"https://img0.baidu.com/it/u=4253577057,156444933&fm=253&fmt=auto&app=120&f=JPEG?w=1213&h=800"}
+,
+  {"id":"2","title":"国家博物馆","longitude":"116.401304","latitude":"39.905374","price":"0","rate":"5","officalId":"ichnmuseum","type":"ab","appId":"wx9e2927dd595b0473","recomend":"有讲解，古代展厅，讲解，建筑艺术","voice":"10:00，13:30，讲解地点在北区大厅集合","time":"周二至周日9:00-17:00，16:00停止入馆，16:30清场","go":"提前7天，17:00放票，本周六约下周六","img":"https://img1.baidu.com/it/u=207479255,790142157&fm=253&fmt=auto&app=120&f=JPEG?w=939&h=500"}
+,
+  {"id":"3","title":"首都博物馆","longitude":"116.342067","latitude":"39.906412","price":"0","rate":"5","officalId":"capitalmuseum","type":"abo","appId":"wx79ef8066f8c5edcd","recomend":"有讲解，中轴线艺术展，北京建都史，五楼民俗艺术，戏楼，东区大圆筒","voice":"10:00在二层通史厅入口，14:00在五层民俗厅入口；《辉煌的北京》9:30，10:30，11:30，13:10，14:10，15:10，16:10","time":"周二至周日9:00-17:00，16:00停止入馆","go":"提前7天，20:00放票，本周六约下周六","img":"https://img2.baidu.com/it/u=2203903211,2500518477&fm=253&fmt=auto&app=138&f=JPEG?w=972&h=649"}
+,
+  {"id":"4","title":"军事博物馆","longitude":"116.323871","latitude":"39.909108","price":"0","rate":"5","officalId":"zgjsbwg","type":"acl","appId":"wxe7ab4bac193578d0","recomend":"4点停进，飞机大炮武器陈列","voice":"10:00，14:00","time":"周二至周日9:00-17:00，16:00停止入馆","go":"提前7天，8:00放票，本周六约下周六","img":"https://img2.baidu.com/it/u=3081116457,1929558041&fm=253&fmt=auto&app=138&f=JPEG?w=1200&h=800"}
+,
+  {"id":"5","title":"自然博物馆","longitude":"116.399833","latitude":"39.883183","price":"0","rate":"5","officalId":"NNHMChina","type":"cy","appId":"","recomend":"动物标本，恐龙世界，海底世界，人体科学","voice":"10:30，14:30","time":"周二至周日9:00-17:00，16:30停止入馆","go":"提前3天，11:00放票，本周三约本周六","img":"https://qcloud.dpfile.com/pc/O00jlfkYprev3h5IYUVemu1gyd-oG9B6Ya2saeAbyJuV4ytLq4kAdOECkl3rKfu6.jpg"}
+,
+  {"id":"6","title":"中华世纪坛","longitude":"116.321339","latitude":"39.910663","price":"0","rate":"4","officalId":"CMM-AM","type":"abt","appId":"wx14a862c8f040d218","recomend":"建筑艺术，展览","voice":"09:30，13:30","time":"周二至周日9:00-17:00，16:10停止入馆","go":"","img":"https://pic.quanjing.com/ii/e8/QJ6518008138.jpg@%21350h"}
+,
+  {"id":"7","title":"考古博物馆","longitude":"116.398955","latitude":"39.998782","price":"0","rate":"5","officalId":"gh_4c3d629319fc","type":"atz","appId":"wx48b5cc9990544897","recomend":"有讲解，出土文物，讲解，巨幕，奥林匹克","voice":"09:30，10:30，13:30，14:30","time":"周三至周日9:00-16:30，16:00停止入馆，周二不对个人","go":"提前3天，上午放票，本周三约本周六","img":"https://img2.baidu.com/it/u=4183598114,2743717412&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"8","title":"党史展览馆","longitude":"116.399379","latitude":"40.003829","price":"0","rate":"4","officalId":"gh_72eb8e4c45ed","type":"az","appId":"","recomend":"有讲解，革命文物，讲解，沉浸式巨幕，奥林匹克","voice":"9:30，10:00，10:30，13:30，14:00，14:30‌；《飞越中国》9:30，10:00，10:30，11:00，14:00，14:30‌，15:00，15:30","time":"周二至周日9:00-17:00，16:00停止入馆","go":"需要公众号预约","img":"http://images.china.cn/site1000/2022-12/08/cd8e105f-fae8-4a1b-a0fa-478747e9d9d0_zsize.png"}
+,
+  {"id":"9","title":"北京市档案馆","longitude":"116.470944","latitude":"39.885409","price":"0","rate":"4","officalId":"bjsdag","type":"ao","appId":"","recomend":"周日闭馆，北京建都史，珍贵档案","voice":"5人成团可以预约讲解","time":"周一至周六9:00-17:00，16:30停止入馆，周日不开放","go":"","img":"https://pic.rmb.bdstatic.com/bjh/e159b98a13fc1741484cf34d28d0576f.jpeg"}
+,
+  {"id":"10","title":"第一历史档案馆","longitude":"116.410913","latitude":"39.898816","price":"0","rate":"4","officalId":"mingqingdangan","type":"at","appId":"wxd7efb3a5542b2457","recomend":"周日闭馆，珍贵档案，建筑艺术","voice":"9:30，10:30，14:00，15:00","time":"周一至周六9:00-17:00，16:30停止入馆，周日不开放","go":"","img":"https://inews.gtimg.com/om_bt/OwFXdI8qHrBbAMVCg0AM9yZrtVxj1JNTmf4YhnO7soN0UAA/641"}
+,
+  {"id":"11","title":"北京大运河博物馆","longitude":"116.71666","latitude":"39.880877","price":"0","rate":"4","officalId":"gh_c63c95951819","type":"artl","appId":"wx08bfb74354418e65","recomend":"7点停进，8点闭馆，建筑艺术，京杭大运河历史","voice":"10:30，14:30","time":"周二至周日10:00-20:00，19:00停止入馆，闭馆时间晚","go":"","img":"https://img2.baidu.com/it/u=1533575461,33753376&fm=253&fmt=auto&app=138&f=JPEG?w=888&h=500"}
+,
+  {"id":"12","title":"宣南博物馆","longitude":"116.365004","latitude":"39.892823","price":"0","rate":"4","officalId":"bjxnwhbwg","type":"adtro","appId":"","recomend":"沉浸式演出，寺庙博物馆","voice":"10:00，13:30‌‌；《宣南往士》五六日10:30-11:30","time":"周二至周日9:00-16:30，16:00停止入馆，电话83167249","go":"沉浸式需要预约","img":"https://qcloud.dpfile.com/pc/Hp_B2X1R5-1QKDt7INnWluItr8oY0O6D0AdOVXbW4N0xBLWID-CXDCDzHwnl8rVp.jpg"}
+,
+  {"id":"13","title":"自来水博物馆","longitude":"116.437404","latitude":"39.946017","price":"0","rate":"2","officalId":"gh_89bf02beb904","type":"ct","appId":"","recomend":"可用语音导览器，近代建筑艺术，北京自来水历史","voice":"","time":"周三至周日9:00-16:00，15:30停止入馆，周二闭馆","go":"","img":"https://img0.baidu.com/it/u=2402411125,3785391675&fm=253&fmt=auto&app=138&f=JPEG?w=730&h=487"}
+,
+  {"id":"14","title":"法院博物馆","longitude":"116.407273","latitude":"39.902763","price":"0","rate":"3","officalId":"gh_cb307441a3ef","type":"at","appId":"","recomend":"欧式建筑风格，法院模拟场景，审判历史","voice":"","time":"周二至周日9:00-16:00，15:30停止入馆","go":"","img":"https://wx2.sinaimg.cn/large/006b9zK7ly1gq37bl2dumj312w0t61kz.jpg"}
+,
+  {"id":"15","title":"北京警察博物馆","longitude":"116.404998","latitude":"39.901997","price":"0","rate":"2","officalId":"gh_046af28534f2","type":"at","appId":"wx5b39a2f716ba836a","recomend":"3:30停进，北京警察发展历史","voice":"","time":"周二至周日9:00-16:00，15:30停止入馆","go":"需要公众号预约","img":"https://img2.baidu.com/it/u=3404124051,1359411678&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500"}
+,
+  {"id":"16","title":"北京科学中心","longitude":"116.392635","latitude":"39.970194","price":"0","rate":"4","officalId":"gh_bc4e899b1071","type":"ctz","appId":"","recomend":"球幕，科学互动，儿童乐园，奥林匹克","voice":"巨幕：9:45，11:15，14:00，15:45","time":"周三至周日9:30-17:00，16:00停止入场，周二闭馆","go":"提前3天，12:00放票，本周三约本周六","img":"https://pic.rmb.bdstatic.com/bjh/news/dcc95d2731c136bf8b5dd990c9ead2c4.jpeg"}
+,
+  {"id":"17","title":"国家会议中心","longitude":"116.390114","latitude":"40.001122","price":"0","rate":"1","officalId":"CNCC84372008","type":"c","appId":"","recomend":"定期更新展览，奥林匹克","voice":"","time":"全年9:00-17:00开放","go":"","img":"https://q3.itc.cn/q_70/images03/20240719/f173440c0100426b8e60ca65e8fa044f.jpeg"}
+,
+  {"id":"18","title":"电影博物馆","longitude":"116.520445","latitude":"39.996385","price":"0","rate":"5","officalId":"cnfm2005","type":"baczt","appId":"wx45289e4f06cf3058","recomend":"巨幕幻幕网红楼梯，电影发展史，公益电影","voice":"9:30，10:30，14:00，15:00；公益电影：10:00，13:30","time":"周二至周日9:00-17:00，16:30停止入馆","go":"提前4天，上午开始，本周二约本周六","img":"https://img0.baidu.com/it/u=721523635,2118689203&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500"}
+,
+  {"id":"19","title":"科学家博物馆","longitude":"116.398916","latitude":"40.007626","price":"0","rate":"4","officalId":"zgkxjbwg","type":"cz","appId":"wxdc1b48704a3e87d3","recomend":"巨幕，科学家简介，奥林匹克","voice":"10:00，11:00，14:30，15:30；巨幕：9:50，10:50，14:50，15:50","time":"周二至周日9:00-17:00，16:00停止入馆","go":"需要公众号预约巨幕","img":"https://img2.baidu.com/it/u=4084580148,1334992984&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500"}
+,
+  {"id":"20","title":"北京规划展览馆","longitude":"116.401388","latitude":"39.899814","price":"0","rate":"3","officalId":"gh_da5e29c75f64","type":"ca","appId":"","recomend":"北京沙盘图，元大都木制品，北京规划","voice":"10:30,15:00","time":"周二至周日9:00-17:00，16:00停止入馆","go":"","img":"https://pic.rmb.bdstatic.com/bjh/005e1ba32c221e4eec915b661014a952.jpeg"}
+,
+  {"id":"21","title":"铁道博物馆(正阳门馆)","longitude":"116.400346","latitude":"39.899798","price":"0","rate":"2","officalId":"gh_7b48f0f3276d","type":"cat","appId":"","recomend":"欧式建筑，专业内容","voice":"","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img2.baidu.com/it/u=3656013109,1988753194&fm=253&fmt=auto&app=138&f=JPEG?w=985&h=500"}
+,
+  {"id":"22","title":"铁道博物馆(东郊馆)","longitude":"116.516337","latitude":"39.997663","price":"20","rate":"3","officalId":"gh_7b48f0f3276d","type":"ctral","appId":"","recomend":"各种火车，户外铁轨","voice":"","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img2.baidu.com/it/u=3135276143,3723715902&fm=253&fmt=auto&app=138&f=JPEG?w=1421&h=800"}
+,
+  {"id":"23","title":"民航博物馆","longitude":"116.538058","latitude":"40.017815","price":"0","rate":"2","officalId":"caacmuseum","type":"ctral","appId":"","recomend":"飞机，室内外结合","voice":"周六日10:00，14:00","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://t12.baidu.com/it/u=3670310424,160542481&fm=30&app=106&f=JPEG?w=640&h=356&s=50272BF0001007C0001BBC04030000F9"}
+,
+  {"id":"24","title":"奥运博物馆","longitude":"116.39652","latitude":"39.990407","price":"0","rate":"3","officalId":"bjaybwg","type":"cn","appId":"","recomend":"大气开阔，互动游戏，奥林匹克","voice":"10:00，14:00，15:00；开闭幕式放映厅9:50，11:00，13:50，14:50，15:50","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://qcloud.dpfile.com/pc/dTECCIa__jxbXahXWNluIyFGASk3h_QRmA8tgbeOY4Msr_8_s-LoetaL-McV4SZn.jpg"}
+,
+  {"id":"25","title":"航天博物馆","longitude":"116.423459","latitude":"39.804846","price":"30","rate":"2","officalId":"gh_d974d58ff762","type":"cl","appId":"","recomend":"","voice":"","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img2.baidu.com/it/u=1110139799,2835155782&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500"}
+,
+  {"id":"26","title":"动物博物馆","longitude":"116.381429","latitude":"40.002551","price":"40","rate":"3","officalId":"nzmc-ioz","type":"cy","appId":"","recomend":"闲鱼20，旅游年卡","voice":"10:00，15:00","time":"周二至周日9:00-16:30","go":"","img":"https://img1.baidu.com/it/u=4267560921,170017326&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"27","title":"北京天文馆","longitude":"116.336833","latitude":"39.937306","price":"20","rate":"3","officalId":"bjtwg_bjp","type":"caz","appId":"","recomend":"","voice":"","time":"周一，周三至周日9:00-16:30，16:00停止入馆，周二闭馆","go":"","img":"https://n.sinaimg.cn/sinakd10114/762/w1000h562/20210803/2e92-e9462c0db5f4d67fadbbe42eae085b7f.png"}
+,
+  {"id":"28","title":"古动物馆","longitude":"116.333946","latitude":"39.937435","price":"20","rate":"2","officalId":"paleozoo","type":"cy","appId":"","recomend":"","voice":"10:00，14:00","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img1.baidu.com/it/u=1559672877,2357970158&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=800"}
+,
+  {"id":"29","title":"抗日战争纪念馆","longitude":"116.225921","latitude":"39.851796","price":"0","rate":"2","officalId":"zgrmkrzzjng","type":"ar","appId":"","recomend":"","voice":"9:30，10:30，14:15，14:45在抗战馆主展厅","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://qcloud.dpfile.com/pc/U1OAD4q3gHBSlRzbVT_QoSF3pdn3y_6_sZ80R58cvywrg3bZmogVH6Ln8ywR4Guo.jpg"}
+,
+  {"id":"30","title":"农业博物馆","longitude":"116.465132","latitude":"39.940518","price":"0","rate":"3","officalId":"zgnybwg","type":"car","appId":"wxddbaea23460c1aaa","recomend":"有湖","voice":"","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img0.baidu.com/it/u=1482913848,1597007825&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500"}
+,
+  {"id":"31","title":"海关博物馆","longitude":"116.432995","latitude":"39.907129","price":"0","rate":"3","officalId":"customsmuseum","type":"cayl","appId":"","recomend":"有船，动物标本","voice":"10:00，15:00","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img2.baidu.com/it/u=2391164392,2397980189&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1067"}
+,
+  {"id":"32","title":"民族文化宫","longitude":"116.368878","latitude":"39.908221","price":"0","rate":"3","officalId":"minzuwenhuagong","type":"ab","appId":"","recomend":"","voice":"9:30，10:30，14:30，15:30","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img2.baidu.com/it/u=3972297293,2887913892&fm=253&fmt=auto&app=138&f=JPEG?w=860&h=446"}
+,
+  {"id":"33","title":"中华民族园","longitude":"116.391367","latitude":"39.982848","price":"45","rate":"4","officalId":"bjmuseum","type":"birt","appId":"","recomend":"闲鱼25，奥林匹克","voice":"","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img2.baidu.com/it/u=1647436086,1000199814&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"34","title":"现代文学馆","longitude":"116.430013","latitude":"39.984713","price":"0","rate":"2","officalId":"gh_f3f1cd9c5cfb","type":"ar","appId":"","recomend":"文学类","voice":"10:00，14:00","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img0.baidu.com/it/u=2360836766,287093040&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"35","title":"典籍博物馆","longitude":"116.323964","latitude":"39.943149","price":"0","rate":"3","officalId":"gh_5973cbf31b07","type":"a","appId":"","recomend":"文学类","voice":"永乐大典10:30，茶叶14:30，甲骨文15:05","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img0.baidu.com/it/u=922615991,1499550772&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"36","title":"汽车博物馆","longitude":"116.301692","latitude":"39.828941","price":"30","rate":"3","officalId":"auto_museum","type":"cl","appId":"","recomend":"","voice":"","time":"周一，周三至周日9:00-17:00，16:30停止入馆，周五周六延长到19:00，18:30停止入馆","go":"","img":"https://img0.baidu.com/it/u=3955825358,2577899151&fm=253&fmt=auto&app=120&f=JPEG?w=799&h=500"}
+,
+  {"id":"37","title":"景泰蓝博物馆","longitude":"116.413712","latitude":"39.86405","price":"0","rate":"2","officalId":"jtlbwg","type":"b","appId":"wxbf5bad7c11ef4b33","recomend":"工艺品","voice":"","time":"工作日开放时间为8:00-17:00，节假日为9:00-16:00","go":"","img":"https://pic2.zhimg.com/v2-70b3fe5f39afe43b21ebffadc9be52af_r.jpg"}
+,
+  {"id":"38","title":"93号博物馆","longitude":"116.387659","latitude":"39.892895","price":"0","rate":"0","officalId":"Museum-93","type":"aq","appId":"","recomend":"","voice":"","time":"全年9:00-17:30开放","go":"","img":"https://img1.bjd.com.cn/2023/12/07/c94fb4fc1e1d4a471757e9d8156a0b7bda8a2aed.jpeg"}
+,
+  {"id":"39","title":"湖广会馆","longitude":"116.384032","latitude":"39.8889","price":"0","rate":"1","officalId":"bjhghg","type":"ba","appId":"","recomend":"大戏楼，戏曲博物馆","voice":"","time":"9:00-17:00开放，周末不开放参观，工作日开放日参考公众号，电话023-63914697","go":"需要公众号预约","img":"https://wx2.sinaimg.cn/mw690/82a17cb7ly1hqbwp8vjroj23342bc7wl.jpg"}
+,
+  {"id":"40","title":"北京茶叶博物馆","longitude":"116.327682","latitude":"39.880536","price":"0","rate":"0","officalId":"JingHuaTeaMacrocosm","type":"c","appId":"","recomend":"","voice":"","time":"周二至周日9:00-16:00","go":"","img":"https://img1.baidu.com/it/u=2978416266,3708660217&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"41","title":"天桥印象博物馆","longitude":"116.39747","latitude":"39.883062","price":"0","rate":"1","officalId":"tqyxplus","type":"bao","appId":"","recomend":"","voice":"","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img1.baidu.com/it/u=2767239445,1181216604&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"42","title":"中国地质博物馆","longitude":"116.371739","latitude":"39.923387","price":"15","rate":"3","officalId":"gh_d8f9638c59c2","type":"cy","appId":"","recomend":"钻石，恐龙","voice":"","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img0.baidu.com/it/u=2026466539,2458758072&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"43","title":"钱币博物馆","longitude":"116.39493","latitude":"39.902127","price":"0","rate":"2","officalId":"zhongqian2009","type":"a","appId":"","recomend":"","voice":"10:00，15:00","time":"周二至周日9:00-17:00，16:00停止入馆","go":"","img":"https://img2.baidu.com/it/u=1867467151,3923257411&fm=253&fmt=auto&app=120&f=JPEG?w=735&h=500"}
+,
+  {"id":"44","title":"园林博物馆","longitude":"116.177113","latitude":"39.878994","price":"0","rate":"4","officalId":"gardensmuseum","type":"bart","appId":"wx8b6505dc1a4c177d","recomend":"","voice":"10:00，10:30，14:00，14:30","time":"周二至周日9:00-17:00，15:30停止入馆","go":"","img":"https://img1.baidu.com/it/u=962717419,3977917410&fm=253&fmt=auto&app=138&f=JPEG?w=1351&h=800"}
+,
+  {"id":"45","title":"航空博物馆","longitude":"116.366638","latitude":"40.185035","price":"0","rate":"3","officalId":"zgkjhkbwg","type":"crl","appId":"","recomend":"","voice":"10:00，14:00","time":"周二至周日8:30-16:30，16:00停止入馆","go":"","img":"https://bkimg.cdn.bcebos.com/pic/562c11dfa9ec8a13632709de5152868fa0ec08fa6ac9"}
+,
+  {"id":"46","title":"税务博物馆","longitude":"116.446442","latitude":"39.982546","price":"0","rate":"1","officalId":"gh_5817b46b56e5","type":"ca","appId":"","recomend":"","voice":"","time":"周二至周六9:30-16:30，16:00停止入馆，周日不开放","go":"","img":"https://img2.baidu.com/it/u=806672457,3167084277&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"47","title":"北京人艺戏剧博物馆","longitude":"116.411832","latitude":"39.921581","price":"0","rate":"3","officalId":"bjryxjbwg","type":"bao","appId":"wx3db2791629bbb3dc","recomend":"","voice":"","time":"周二至周日19:30-19:30，19:00停止入馆，闭馆时间晚","go":"","img":"https://img2.baidu.com/it/u=763031860,3652538665&fm=253&fmt=auto?w=608&h=456"}
+,
+  {"id":"48","title":"科学技术馆","longitude":"116.398595","latitude":"40.006023","price":"30","rate":"5","officalId":"ptm_2014","type":"cz","appId":"","recomend":"孩子互动，奥林匹克","voice":"","time":"周二至周日9:30-17:00，16:30停止入馆","go":"需要公众号预约","img":"https://img0.baidu.com/it/u=4052668443,3471389561&fm=253&fmt=auto&app=138&f=JPEG?w=815&h=500"}
+,
+  {"id":"49","title":"科举匾额博物馆","longitude":"116.540779","latitude":"39.898545","price":"40元，每月第一个周六免费","rate":"2","officalId":"wx3db2791629bbb3dc","type":"aqr","appId":"","recomend":"旅游年卡","voice":"","time":"周二至周日9:00-17:00","go":"","img":"https://img0.baidu.com/it/u=2199076370,4159415037&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"}
+,
+  {"id":"50","title":"北京公交馆","longitude":"116.303962","latitude":"39.890449","price":"0","rate":"3","officalId":"bjgjjt","type":"cl","appId":"","recomend":"","voice":"9:30，13:30","time":"周六9:00-11:00，13:00-15:00，周二至周五上午正常，下午延长14:00-16:30","go":"提前7天，8:00放票，本周六约下周六","img":"https://img2.baidu.com/it/u=3479148926,1657722234&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500"}
+,
+  {"id":"51","title":"北京大学","longitude":"116.310918","latitude":"39.992873","price":"0","rate":"5","officalId":"iPKU1898","type":"fa","appId":"wxae221464afae4826","recomend":"","voice":"寒假期间有9:00，10:30，14:00，15:30，提前15分钟到达新太阳学生中心九一剧场","time":"核验时间8:00-11:00，13:00-16:00","go":"提前7天，8:00放票，本周六约下周六","img":"https://img1.baidu.com/it/u=1086753069,3888511882&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800"}
+,
+  {"id":"52","title":"清华大学","longitude":"116.326936","latitude":"40.003213","price":"0","rate":"5","officalId":"THU1911-BJ","type":"fa","appId":"wxef227a5869ad5e4a","recomend":"","voice":"寒假期间有9:00，10:00，14:00，15:00从日晷出发，提前20分到","time":"核验时间8:00-11:00，13:00-16:00","go":"提前7天，8:00放票，本周六约下周六","img":"https://img0.baidu.com/it/u=412491922,34672627&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500"}
+,
+  {"id":"53","title":"北京体育大学","longitude":"116.318746","latitude":"40.024529","price":"0","rate":"3","officalId":"BSU-1953","type":"f","appId":"","recomend":"","voice":"","time":"刷身份证进入","go":"","img":"https://img2.baidu.com/it/u=1406994602,2426734020&fm=253&fmt=auto&app=120&f=JPEG?w=1257&h=800"}
+,
+  {"id":"54","title":"北京市方志馆","longitude":"116.462392","latitude":"39.869616","price":"0","rate":"2","officalId":"bjsfzgdyh","type":"a","appId":"","recomend":"","voice":"","time":"周一至周六9:30-17:00，16:30停止入馆，周日闭馆","go":"","img":"https://img1.baidu.com/it/u=1266002366,1253154280&fm=253&fmt=auto?w=888&h=500"}
+,
+  {"id":"55","title":"中华诗词博物馆","longitude":"116.463228","latitude":"39.869821","price":"0","rate":"1","officalId":"","type":"ba","appId":"","recomend":"首图三件套","voice":"","time":"周二至周日9:00-17:00","go":"","img":"https://bkimg.cdn.bcebos.com/pic/d009b3de9c82d158ccbf317bb2530ed8bc3eb035e4fa"}
+,
+  {"id":"56","title":"正阳门箭楼","longitude":"116.39791","latitude":"39.899368","price":"0","rate":"5","officalId":"gh_776dc392acc0","type":"atx","appId":"","recomend":"中轴线","voice":"9:30，11:30，13:30，15:30","time":"周二至周日9:00-17:00，16:30停止入馆","go":"提前7天，17:00放票，本周六约下周六","img":"https://img0.baidu.com/it/u=4105293578,2480247933&fm=253&fmt=auto?w=1066&h=800"}
+,
+  {"id":"57","title":"八达岭长城","longitude":"116.016802","latitude":"40.356188","price":"旺季45元，淡季40元","rate":"5","officalId":"GreatWall-badaling","type":"iat","appId":"wx32de8a3dce14fe60","recomend":"","voice":"","time":"","go":"","img":"https://pic.rmb.bdstatic.com/bjh/240428/beautify/23b9a3066f7fe666225e574d67a12355.jpeg@h_1280"}
+,
+  {"id":"58","title":"天安门广场","longitude":"116.397755","latitude":"39.903179","price":"0","rate":"5","officalId":"tiananmenyinxiang","type":"a","appId":"wx5387f2dc7079c2a7","recomend":"","voice":"","time":"提前1天预约","go":"提前1天预约，不能定当天","img":"https://img2.baidu.com/it/u=3072957233,2744214562&fm=253&fmt=auto&app=120&f=JPEG?w=785&h=409"}
+,
+  {"id":"59","title":"主席纪念堂","longitude":"116.397815","latitude":"39.902517","price":"0","rate":"5","officalId":"tiananmenyinxiang","type":"a","appId":"wx492b5d2f5b89c11e","recomend":"","voice":"","time":"周二至周日8:00-12:00，下午不开放","go":"提前6天，12:30放票，本周一约本周六，不能定当天","img":"https://img0.baidu.com/it/u=340746990,3231581761&fm=253&fmt=auto&app=138&f=JPEG?w=389&h=240"}
+,
+  {"id":"60","title":"人民大会堂","longitude":"116.393823","latitude":"39.905024","price":"30","rate":"5","officalId":"tiananmenyinxiang","type":"at","appId":"wxb2809a187df8351b","recomend":"","voice":"","time":"8:30-16:30，15:30停止检票","go":"","img":"https://img2.baidu.com/it/u=3199489220,364091175&fm=253&fmt=auto&app=138&f=JPEG?w=755&h=500"}
+,
+  {"id":"61","title":"天安门城楼","longitude":"116.397487","latitude":"39.908751","price":"15","rate":"5","officalId":"gh_35795f3720b7","type":"at","appId":"","recomend":"中轴线","voice":"09:30，11:30，13:30，15:30","time":"周二至周日8:30-17:00，16:30，淡季提前半小时","go":"提前7天，17:00放票，本周六约下周六","img":"https://img2.baidu.com/it/u=3072957233,2744214562&fm=253&fmt=auto&app=120&f=JPEG?w=785&h=409"}
+,
+  {"id":"62","title":"卢沟桥文化旅游区","longitude":"116.225969","latitude":"39.850387","price":"卢沟桥20元","rate":"4","officalId":"gh_28af1034236b","type":"iat","appId":"","recomend":"","voice":"","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img1.baidu.com/it/u=2586378444,1003455953&fm=253&fmt=auto&app=120&f=JPEG?w=1150&h=800"}
+,
+  {"id":"63","title":"西藏文化博物馆","longitude":"116.414704","latitude":"39.9893","price":"0","rate":"1","officalId":"xizangwenhuabowuguan","type":"at","appId":"","recomend":"","voice":"10:00，14:00","time":"周二至周日9:30-17:00，16:30停止入馆","go":"","img":"https://img0.baidu.com/it/u=2177954102,2415288292&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500"}
+,
+  {"id":"64","title":"首都粮食博物馆","longitude":"116.397788","latitude":"39.869481","price":"0","rate":"1","officalId":"gh_393f987e7cf1","type":"a","appId":"","recomend":"","voice":"","time":"工作日开放中午休息，上午9:30-11:00，下午13:30-16:30","go":"","img":"https://qcloud.dpfile.com/pc/FhvHW6RPB7WR_sgB-Gijhe3D2Lu--s8WbF2P513i3jb3cN6frEosv_Cqs6GI8sKO.jpg"}
+,
+  {"id":"65","title":"德胜门箭楼","longitude":"116.379513","latitude":"39.949697","price":"0","rate":"2","officalId":"","type":"atx","appId":"","recomend":"唯二未拆除的北京城楼","voice":"","time":"","go":"","img":"https://p0.itc.cn/images01/20230103/124e53dfe2494408baf1b0868840676c.jpeg"}
+,
+  {"id":"66","title":"消防博物馆","longitude":"116.387318","latitude":"39.834367","price":"0","rate":"2","officalId":"gh_2d033d7019d6","type":"ca","appId":"wx6d27ab287bc9d34a","recomend":"互动性很强","voice":"9:00，10:00，14:00，15:00","time":"周三至周日10:00-16:30，16:00停止入馆","go":"互动项目需要预约","img":"https://img1.baidu.com/it/u=2709038927,1774470204&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=345"}
+,
+  {"id":"67","title":"北京电影学院","longitude":"116.355762","latitude":"39.97161","price":"0","rate":"3","officalId":"bfaweixin","type":"f","appId":"wxc9e3953cad2d0dcb","recomend":"","voice":"","time":"","go":"提前6天，上午放票，本周一约本周六","img":"https://img1.baidu.com/it/u=1233640341,1443501312&fm=253&fmt=auto&app=120&f=JPEG?w=1065&h=800"}
+,
+  {"id":"68","title":"北京航空航天大学","longitude":"116.34731","latitude":"39.981819","price":"0","rate":"3","officalId":"BUAA_1952","type":"f","appId":"wxf68a40a9f57c8f3f","recomend":"","voice":"","time":"刷身份证进入","go":"","img":"https://img0.baidu.com/it/u=11215447,241537163&fm=253&fmt=auto&app=138&f=JPEG?w=1025&h=636"}
+,
+  {"id":"69","title":"北京布鞋文化博物馆","longitude":"116.395508","latitude":"39.895781","price":"0","rate":"1","officalId":"","type":"ca","appId":"","recomend":"","voice":"","time":"9:30-19:00","go":"","img":"https://qcloud.dpfile.com/pc/v418EhGN3qwXDCX3oEfQpAcGwLjnCv-4tpFTVUQLUEXuTEUwe6AXdZIGa6qWVvsc.jpg"}
+,
+  {"id":"70","title":"琉璃厂古文化街","longitude":"116.38457","latitude":"39.895313","price":"0","rate":"1","officalId":"","type":"i","appId":"","recomend":"","voice":"","time":"","go":"","img":"https://img1.baidu.com/it/u=2608714147,3310302234&fm=253&fmt=auto&app=138&f=JPEG?w=523&h=345"}
+,
+  {"id":"71","title":"南锣鼓巷","longitude":"116.402394","latitude":"39.937182","price":"0","rate":"3","officalId":"gh_a1947281669d","type":"k","appId":"","recomend":"胡同","voice":"","time":"","go":"","img":"https://img0.baidu.com/it/u=2547677107,2399602058&fm=253&fmt=auto&app=138&f=JPEG?w=837&h=800"}
+,
+  {"id":"72","title":"烟袋斜街","longitude":"116.394748","latitude":"39.939329","price":"0","rate":"4","officalId":"","type":"k","appId":"","recomend":"胡同，看到海","voice":"","time":"","go":"","img":"https://p26.toutiaoimg.com/origin/tos-cn-i-qvj2lq49k0/0e47838e080742a7a5201408eabb9a36"}
+,
+  {"id":"73","title":"红星胡同","longitude":"116.42088","latitude":"39.914891","price":"0","rate":"1","officalId":"","type":"kt","appId":"","recomend":"","voice":"","time":"","go":"","img":"https://img2.baidu.com/it/u=3436724229,2858067367&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"74","title":"邮政邮票博物馆","longitude":"116.431111","latitude":"39.91081","price":"0","rate":"1","officalId":"gh_0258fed50d06","type":"ca","appId":"","recomend":"邮票艺术","voice":"","time":"周二至周日9:00-16:00,15:00停止入馆，关闭时间早","go":"","img":"https://img2.baidu.com/it/u=2220707698,2885883053&fm=253&fmt=auto?w=667&h=500"}
+,
+  {"id":"75","title":"天元中医药博物馆","longitude":"116.513619","latitude":"39.887086","price":"0","rate":"0","officalId":"","type":"ca","appId":"wx9e834ab051316085","recomend":"","voice":"","time":"周二至周日9:00-16:30，16:00停止入馆","go":"","img":"https://img1.baidu.com/it/u=3909105219,3496075783&fm=253&fmt=auto&app=138&f=JPEG?w=608&h=456"}
+,
+  {"id":"76","title":"蒙藏学校旧址","longitude":"116.374641","latitude":"39.910132","price":"0","rate":"1","officalId":"BEIDA-HONGLOU","type":"aq","appId":"","recomend":"","voice":"9:30，14:30","time":"周二至周日10:00-20:30，20:00停止入场","go":"","img":"https://img2.baidu.com/it/u=1033775607,269990528&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500"}
+,
+  {"id":"77","title":"中医药大学博物馆","longitude":"116.426677","latitude":"39.97051","price":"0","rate":"2","officalId":"bzybwg","type":"fca","appId":"","recomend":"","voice":"9:00，10:00，14:00，15:00","time":"周二至周六8:30-16:30","go":"进校需要预约","img":"https://img2.baidu.com/it/u=2213386,3545582557&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"78","title":"民族服饰博物馆","longitude":"116.42965","latitude":"39.974065","price":"0","rate":"0","officalId":"biftbwg","type":"baf","appId":"","recomend":"","voice":"","time":"周二和周四8:30-11:30，13:30-16:30；周六13:30-16:30，国家法定节假日和寒暑假闭馆","go":"","img":"https://img2.baidu.com/it/u=3764487065,2753615739&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500"}
+,
+  {"id":"79","title":"医史博物馆","longitude":"116.426568","latitude":"39.93899","price":"0","rate":"0","officalId":"","type":"ca","appId":"","recomend":"周三下午开门","voice":"","time":"周三下午13:30-16:30","go":"","img":"https://img.meituan.net/leadinimg/4f8a880761162b171095dd60d18f480e53370.webp%40watermark%3D0"}
+,
+  {"id":"80","title":"广誉远中医药历史博物馆","longitude":"116.398325","latitude":"39.894607","price":"0","rate":"0","officalId":"gyyguoyao","type":"ca","appId":"","recomend":"工作日开门","voice":"","time":"9:00-17:00","go":"","img":"https://pic.rmb.bdstatic.com/bjh/ea26d44d39f58abbaf4011f11463ce19.jpeg@s_0,w_2000"}
+,
+  {"id":"81","title":"中药炮制技术博物馆","longitude":"116.309831","latitude":"39.6816","price":"0","rate":"1","officalId":"gh_0d8913b02333","type":"ca","appId":"","recomend":"","voice":"","time":"9:00-16:00","go":"","img":"https://img1.baidu.com/it/u=4133113917,1482842201&fm=253&fmt=auto&app=138&f=PNG?w=494&h=329"}
+,
+  {"id":"82","title":"中国印刷博物馆","longitude":"116.33147","latitude":"39.743478","price":"0","rate":"2","officalId":"chinaprintingmuseum","type":"fc","appId":"","recomend":"北京印刷学院","voice":"","time":"周二至周日9:00-17:00","go":"","img":"https://img2.baidu.com/it/u=1862364934,1086057842&fm=253&fmt=auto&app=138&f=JPEG?w=632&h=500"}
+,
+  {"id":"83","title":"蜜蜂博物馆","longitude":"116.205917","latitude":"40.006845","price":"0","rate":"1","officalId":"","type":"cy","appId":"","recomend":"","voice":"","time":"周二至周日8:30-16:30","go":"","img":"https://bkimg.cdn.bcebos.com/pic/d009b3de9c82d158d419eddc8f0a19d8bd3e42c7"}
+,
+  {"id":"84","title":"南海子麋鹿博物馆","longitude":"116.458508","latitude":"39.777428","price":"0","rate":"2","officalId":"bj-milupark","type":"cy","appId":"","recomend":"","voice":"","time":"周二至周日9:00-16:00","go":"","img":"https://img0.baidu.com/it/u=1753405291,1880178399&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"}
+,
+  {"id":"85","title":"地质大学博物馆","longitude":"116.352662","latitude":"39.990999","price":"0","rate":"3","officalId":"didabwg","type":"fcy","appId":"","recomend":"钻石，恐龙","voice":"","time":"周一至周六14:30-17:30，17:00停止入馆周日闭馆","go":"","img":"https://qcloud.dpfile.com/pc/NbX59VoOcmvlRL_HmkdgGIkniX94dIUUktQ4k8FiOsO-yaTludb9bS1xg1tD4Kys.jpg"}
+,
+  {"id":"86","title":"中国农业大学昆虫博物馆","longitude":"116.2838","latitude":"40.024073","price":"0","rate":"1","officalId":"CAU-EM","type":"fy","appId":"fcy","recomend":"","voice":"","time":"周六周日9:00-17:00","go":"","img":"https://img2.baidu.com/it/u=2650441272,3022969441&fm=253&fmt=auto&app=138&f=JPEG?w=1025&h=575"}
+,
+  {"id":"87","title":"北京林业大学博物馆","longitude":"116.345228","latitude":"40.002932","price":"0","rate":"1","officalId":"gh_be53584e96f6","type":"fy","appId":"","recomend":"","voice":"","time":"请电话62336316咨询开闭状态，周二至周五上午8:30-11:30，下午14:00-17:00","go":"","img":"https://img0.baidu.com/it/u=1394012413,4018782299&fm=253&fmt=auto&app=120&f=JPEG?w=890&h=500"}
+,
+  {"id":"88","title":"北京航空航天博物馆","longitude":"116.350675","latitude":"39.982142","price":"0","rate":"3","officalId":"BUAA_1952","type":"fcl","appId":"","recomend":"飞机大炮","voice":"","time":"周六9:00-16:30，周日闭馆","go":"","img":"https://q9.itc.cn/q_70/images03/20240518/9de99a46b66449e8a8e948218b89678c.jpeg"}
+,
+  {"id":"89","title":"京张清华园博物馆","longitude":"116.339837","latitude":"39.983401","price":"0","rate":"3","officalId":"","type":"cial","appId":"","recomend":"京张铁路遗址公园，火车铁轨","voice":"","time":"9:30-17:30","go":"","img":"https://b0.bdstatic.com/9dc5089bad8afffe7bdb7e855628ea2b.jpg@h_1280"}
+,
+  {"id":"90","title":"清华园车站旧址","longitude":"116.33176","latitude":"39.99151","price":"0","rate":"2","officalId":"","type":"a","appId":"","recomend":"和京张清华园博物馆关联","voice":"","time":"周二至周日9:00-12:00，11:30后停止入馆，14:00-17:30，17:00后停止入馆","go":"","img":"https://img1.baidu.com/it/u=1045544005,3420707617&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500"}
+,
+  {"id":"91","title":"古观象台","longitude":"116.434326","latitude":"39.907206","price":"20","rate":"2","officalId":"bjtwg_bjp","type":"caix","appId":"","recomend":"有城墙","voice":"","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://copyright.bdstatic.com/vcg/creative/3322899f07e346b3d7bcd0d010b5610a.jpg@h_1280"}
+,
+  {"id":"92","title":"中法大学旧址","longitude":"116.40703","latitude":"39.928204","price":"0","rate":"2","officalId":"gh_6b9d83a32ef8","type":"aft","appId":"","recomend":"适合拍照","voice":"9:30，14:30","time":"周二至周日9:00-12:00，14:00-17:00","go":"","img":"https://img1.baidu.com/it/u=2639340417,2214695928&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666"}
+,
+  {"id":"93","title":"北大红楼","longitude":"116.405361","latitude":"39.92471","price":"0","rate":"3","officalId":"BEIDA-HONGLOU","type":"af","appId":"","recomend":"木质红色楼梯，革命历史","voice":"9:30，10:30，14:00，15:00","time":"周二至周日9:00-17:00，16:30停止检票","go":"","img":"https://img0.baidu.com/it/u=422928210,1479665330&fm=253&fmt=auto&app=120&f=JPEG?w=1068&h=800"}
+,
+  {"id":"94","title":"京师大学堂","longitude":"116.401587","latitude":"39.926166","price":"0","rate":"1","officalId":"gh_8b95923632eb","type":"aft","appId":"","recomend":"建筑艺术","voice":"","time":"周二至周日9:00-17:00","go":"","img":"https://img0.baidu.com/it/u=1076516818,1523209329&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"95","title":"鼓楼","longitude":"116.395937","latitude":"39.940781","price":"20","rate":"4","officalId":"bjzhonggulou","type":"at","appId":"","recomend":"拍照很美，中轴线","voice":"一层沉浸式数字艺术体验《共鸣》10:30，11:30，13:30，14:30，15:30；二层击鼓表演时间:10:00，11:00，14:00，16:00","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img2.baidu.com/it/u=1943896902,3672534497&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"96","title":"钟楼","longitude":"116.39586","latitude":"39.942439","price":"10","rate":"3","officalId":"bjzhonggulou","type":"at","appId":"","recomend":"适合拍照","voice":"","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img2.baidu.com/it/u=967392213,3564664665&fm=253&fmt=auto&app=138&f=JPEG?w=524&h=350"}
+,
+  {"id":"97","title":"孔庙国子监","longitude":"116.413285","latitude":"39.946777","price":"30","rate":"4","officalId":"bjkmgzj","type":"dar","appId":"wx9e834ab051316085","recomend":"","voice":"10:00，14:00","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img2.baidu.com/it/u=1083288240,3855607936&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500"}
+,
+  {"id":"98","title":"先农坛","longitude":"116.392206","latitude":"39.876929","price":"15","rate":"4","officalId":"gh_a235e15b7766","type":"dar","appId":"","recomend":"藻井，中轴线","voice":"9:30，10:30，14:00，15:00","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img0.baidu.com/it/u=1779652806,1701815118&fm=253&fmt=auto&app=138&f=JPEG?w=1067&h=800"}
+,
+  {"id":"99","title":"万寿寺","longitude":"116.311646","latitude":"39.947093","price":"20","rate":"4","officalId":"bjyibo","type":"dabrt","appId":"","recomend":"京西小故宫，河畔码头","voice":"10:00，14:00","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img1.baidu.com/it/u=573215221,4062260716&fm=253&fmt=auto&app=138&f=JPEG?w=779&h=500"}
+,
+  {"id":"100","title":"石刻艺术博物馆","longitude":"116.330436","latitude":"39.944623","price":"20","rate":"4","officalId":"gh_2b56c83b5521","type":"dar","appId":"","recomend":"秋景绝美","voice":"10:00，14:00，起始地点为大殿基前","time":"周二至周日9:00-17:00，16:30停止入馆","go":"","img":"https://img1.baidu.com/it/u=3956143502,3345496915&fm=253&fmt=auto&app=138&f=JPEG?w=1201&h=800"}
+
+]
+}

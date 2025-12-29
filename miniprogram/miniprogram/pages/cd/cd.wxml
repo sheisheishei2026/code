@@ -1,0 +1,43 @@
+<wxs module="utils">
+  var getDesc = function (item) {
+        var titles = [];
+        for (var i = 0; i < item.navList.length; i++) {
+            var obj = item.navList[i];
+            if (obj.title) {
+                titles.push((i+1)+'.'+obj.title);
+            }
+        }
+        return titles.join(' - ');
+  };
+  var getTitleColor = function (item) {
+    if (item.desc) {
+        return '#D3FACE';
+    } else if (item.ifs.length > 0) {
+        return 'rgb(247, 237, 223)';
+    } else {
+        return '#CED6FA';
+    }
+};
+  module.exports.getDesc = getDesc;
+  module.exports.getTitleColor = getTitleColor;
+</wxs>
+<!-- <canvas canvas-id="myCanvas" class="image-content has-shadow" ></canvas> -->
+<scroll-view id="scroll" show-scrollbar="false" scrollTop="{{scrollTop}}" bindrefresherrefresh="onRefresherRefresh" scroll-with-animation="true" style="height: 100vh; overflow: hidden;" scroll-y="true">
+<view class="container" wx:for="{{displayedList}}" wx:key="index"  wx:for-index='index1' wx:for-item="item2">
+  <text class="title" style="background-color: {{utils.getTitleColor(item2)}};" bindtap="goToMap" data-poi="{{item2}}">{{item2.title}}</text>
+  <text class="desc" wx:if="{{item2.desc}}" bindtap="goToMap" data-poi="{{item2}}">{{utils.getDesc(item2)}}</text>
+  <view class="scroll-wrapper">
+    <scroll-view class="scrollable-container" scroll-x="true" scroll-left="0" enable-flex="true">
+      <view class="scrollable-item" wx:for="{{item2.navList}}" wx:key="index" wx:for-item="item">
+        <view class="content-wrapper" data-place="{{item}}" data-list="{{item2.navList}}"bindtap="onPlaceTap">
+          <image mode="aspectFill" class="image-content has-shadow" mode="aspectFill" src="{{noNet?'':item.img}}" bindload="onImageLoad" binderror="onImageError" data-index="{{index}}" data-index1="{{index1}}" lazy-load="true"></image>
+          <text class="text-content">{{item.title}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>
+</scroll-view>
+<!-- <image class="back-to-top-btn" bindtap="backToTop" src="/images/up.png" src="{{item.img}} /> -->
+<!-- <web-view src="https://www.baidu.com/"></web-view> -->
