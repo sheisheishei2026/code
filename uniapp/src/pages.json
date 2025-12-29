@@ -1,0 +1,102 @@
+{
+	"pages": [
+		{
+			"path": "pages/filter/filter",
+			"style": {
+				"navigationBarTitleText": "景点"
+			}
+		},
+		{
+			"path": "pages/cd/cd",
+			"style": {
+				"navigationBarTitleText": "专辑"
+			}
+		},
+		{
+			"path": "pages/map/map",
+			"style": {
+				"navigationBarTitleText": "地图"
+			}
+		},
+		{
+			"path": "pages/poi/poi",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "常用"
+			}
+		},
+		{
+			"path": "pages/pics/pics",
+			"style": {
+				"navigationBarTitleText": "图片"
+			}
+		},
+		{
+			"path": "pages/mindmap/mindmap",
+			"style": {
+				"navigationBarTitleText": "思维导图"
+			}
+		},
+		{
+			"path": "pages/magnifier/magnifier",
+			"style": {
+				"navigationBarTitleText": "放大镜"
+			}
+		},
+		{
+			"path": "pages/flashlight/flashlight",
+			"style": {
+				"navigationBarTitleText": "手电筒"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Weixin",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#0099FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/filter/filter",
+				"text": "景点",
+				"iconPath": "static/images/m2.png",
+				"selectedIconPath": "static/images/m2.png"
+			},
+			{
+				"pagePath": "pages/cd/cd",
+				"text": "专辑",
+				"iconPath": "static/images/m1.png",
+				"selectedIconPath": "static/images/m1.png"
+			},
+			{
+				"pagePath": "pages/map/map",
+				"text": "地图",
+				"iconPath": "static/images/m3.png",
+				"selectedIconPath": "static/images/m3.png"
+			},
+			{
+				"pagePath": "pages/poi/poi",
+				"text": "分类",
+				"iconPath": "static/images/m4.png",
+				"selectedIconPath": "static/images/m4.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "常用",
+				"iconPath": "static/images/m5.png",
+				"selectedIconPath": "static/images/m5.png"
+			}
+		]
+	}
+}
